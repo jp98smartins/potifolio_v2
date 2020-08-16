@@ -43,7 +43,11 @@ const Navbar = () => {
         <ul>
           <li>
             <div>
-              <a href="mailto:joaopedromartins@id.uff.br" rel="noreferrer" target="_blank">
+              <a
+                href="mailto:joaopedromartins@id.uff.br"
+                rel="noreferrer"
+                target="_blank"
+              >
                 Email
               </a>
             </div>
@@ -51,7 +55,11 @@ const Navbar = () => {
           <li>
             <div>
               {" "}
-              <a href="https://www.linkedin.com/in/jp98smartins/" rel="noreferrer" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/jp98smartins/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 LinkedIn
               </a>
             </div>
@@ -59,7 +67,11 @@ const Navbar = () => {
           <li>
             <div>
               {" "}
-              <a href="https://github.com/jp98smartins" rel="noreferrer" target="_blank">
+              <a
+                href="https://github.com/jp98smartins"
+                rel="noreferrer"
+                target="_blank"
+              >
                 GitHub
               </a>
             </div>

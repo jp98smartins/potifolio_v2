@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
+import HPDescription from "../components/HomePageDescription"
 import AboutMe from "./aboutme"
 import Experience from "./experience"
 import Projects from "./projects"
@@ -9,17 +10,10 @@ import Contact from "./contact"
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="full-page">
         <Layout>
-          <div id="homepage" style={{ height: 1000 }}>
-            Home Page
-            <a
-              href="mailto:joaopedromartins@id.uff.br"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Fale Comigo!
-            </a>
+          <div id="homepage">
+            <HPDescription />
           </div>
           <div id="aboutme" style={{ height: 1000 }}>
             <AboutMe />
