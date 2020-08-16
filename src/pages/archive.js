@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
+import Contact from "./contact"
 
 class Archive extends Component {
   render() {
@@ -8,7 +9,8 @@ class Archive extends Component {
       <div>
         <Layout>
           Archive
-          <Link to="/">Archive</Link>
+          <Link to="/">Back</Link>
+          <Contact />
         </Layout>
       </div>
     )
