@@ -1,0 +1,144 @@
+/* Main Colors */
+$dark: #131c21
+$yellow: #ffce00
+$yellow-10: rgba(255, 206, 0, 0.1)
+$white: #fff
+$white-80: rgba(255, 255, 255, 0.8)
+$white-60: rgba(255, 255, 255, 0.6)
+$white-50: rgba(255, 255, 255, 0.5)
+
+/* Main Fonts */
+$main-font: "Montserrat"
+$secondary-font: "Roboto Mono"
+
+/* Setting Configs */
+.full-page
+  width: 100%
+
+html,
+body 
+  font-family: $main-font
+  font-size: 16px
+  background-color: $dark
+
+
+.container 
+  width: 80%
+
+
+/* Header */
+
+@keyframes logo-rot
+  100%
+    transform: rotate(180deg)
+    
+header 
+  width: 100%
+  height: 100px
+  display: flex
+  justify-content: center
+  align-items: center
+  position: fixed
+  top: 0px
+  background-color: $dark
+
+.inner-header 
+  width: 100%
+  height: 100px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .logo
+    display: flex
+    justify-content: center
+    align-items: center  
+    img
+      width: 72px
+      height: 72px
+      &:hover
+        animation: logo-rot 1s
+  nav
+    height: 100px
+    ul
+      margin: 0px
+      list-style: none
+      height: 100%
+      display: flex
+      justify-content: space-around
+      align-items: center
+      li
+        margin: 0px 15px
+        height: 100%
+        a
+          text-decoration: none
+          height: 100%
+          color: $white
+          display: flex
+          justify-content: center
+          align-items: center
+          div
+            height: 50%
+            padding: 10px 20px
+            display: flex
+            align-items: center
+            font-size: 14px
+            span
+              font-family: $secondary-font
+              color: $yellow
+          &:hover
+            color: $yellow
+        &:last-child
+          margin: 0px 0px 0px 15px
+          div
+            height: 30%
+            padding: 10px 20px 10px 20px
+            border: 2px solid $yellow
+            border-radius: 5px
+            color: $yellow
+            &:hover
+              background-color: $yellow-10
+
+/* Social Medias */
+
+@keyframes sm-transl
+  50%
+    transform: translateY(-10px)
+  100%
+    transform: translateY(0px)
+
+
+@keyframes sm-transl-email
+  50%
+    transform: translateX(10px)
+  100%
+    transform: translateX(0px)
+    
+
+.social-media
+  position: fixed
+  bottom: 0px
+  right: 150px
+  div
+    height: 50px
+    width: 50px
+    margin: 15px
+    display: flex
+    justify-content: center
+    align-items: center
+    &:first-child
+      justify-content: start
+      align-items: center
+      transform: rotate(-90deg)
+      a
+        font-size: 15px
+        font-family: $secondary-font
+        &:hover
+          animation: sm-transl-email 1s
+    a
+      color: $white-60
+      text-decoration: none
+      font-size: 25px
+      &:hover
+        color: $yellow
+        animation: sm-transl 1s
+

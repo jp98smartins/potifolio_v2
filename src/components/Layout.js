@@ -1,11 +1,13 @@
 import React from "react"
-import NavBar from "./Navbar"
+import Header from "./Navbar"
 import Footer from "./Footer"
+import SocialMedia from "./SocialMedia"
 
 const Layout = props => {
   return (
     <div>
-      <NavBar />
+      <Header />
+      <SocialMedia />
       {props.children}
       <Footer />
     </div>

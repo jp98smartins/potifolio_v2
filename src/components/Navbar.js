@@ -1,85 +1,58 @@
 import React from "react"
 import { Link } from "gatsby"
+import logo from "../assets/logo/logo_yellow.png"
 
-const Navbar = () => {
+const Header = () => {
   return (
-    <div>
-      <header>
-        <div>
-          <Link to="/">Logo...</Link>
+    <header>
+      <div className="container">
+        <div className="inner-header">
+          <div className="logo">
+            <Link to="/">
+              <img src={logo} alt="Logo JP" />
+            </Link>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#aboutme">
+                  <div>
+                    <span>I.</span>Sobre Mim
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#experience">
+                  <div>
+                    <span>II.</span>Experiência
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#projects">
+                  <div>
+                    <span>III.</span>Projetos
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <div>
+                    <span>IV.</span>Contato
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#aboutme">
+                  <div>Currículo</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <div>
-                <a href="#aboutme">About Me...</a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="#experience">Experience...</a>
-              </div>
-            </li>
-            <li>
-              <div>
-                {" "}
-                <a href="#projects">Projects...</a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="#contact">Contact...</a>
-              </div>
-            </li>
-            <li>
-              <a href="#aboutme">
-                <div>Curriculum...</div>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div>
-        <ul>
-          <li>
-            <div>
-              <a
-                href="mailto:joaopedromartins@id.uff.br"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Email
-              </a>
-            </div>
-          </li>
-          <li>
-            <div>
-              {" "}
-              <a
-                href="https://www.linkedin.com/in/jp98smartins/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-            </div>
-          </li>
-          <li>
-            <div>
-              {" "}
-              <a
-                href="https://github.com/jp98smartins"
-                rel="noreferrer"
-                target="_blank"
-              >
-                GitHub
-              </a>
-            </div>
-          </li>
-        </ul>
       </div>
-    </div>
+    </header>
   )
 }
 
-export default Navbar
+export default Header
