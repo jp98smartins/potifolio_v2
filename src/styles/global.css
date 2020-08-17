@@ -257,6 +257,74 @@ header {
 }
 
 /* Footer */
+@-webkit-keyframes ft-dev {
+  50% {
+    border-bottom: 1px solid #ffce00;
+  }
+  100% {
+    background-color: rgba(255, 206, 0, 0.1);
+    border-bottom: 1px solid #ffce00;
+  }
+}
+@keyframes ft-dev {
+  50% {
+    border-bottom: 1px solid #ffce00;
+  }
+  100% {
+    background-color: rgba(255, 206, 0, 0.1);
+    border-bottom: 1px solid #ffce00;
+  }
+}
+
+.ft-data {
+  width: 100%;
+  height: 10vh;
+  background-color: #131c21;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ft-data footer {
+  width: 50%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ft-data footer .ft-copy {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ft-data footer a {
+  text-decoration: none;
+  color: #ffce00;
+  font-size: 14px;
+  font-family: "Roboto Mono";
+}
+
+.ft-data footer a .ft-dev {
+  padding: 10px;
+}
+
+.ft-data footer a .ft-dev:hover {
+  -webkit-animation: ft-dev 2s linear forwards;
+          animation: ft-dev 2s linear forwards;
+}
+
 /* Home Page */
 #homepage {
   width: 100%;

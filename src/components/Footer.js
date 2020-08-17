@@ -1,14 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
 
 const Footer = () => {
   return (
-    <div>
+    <div className="ft-data">
       <footer>
-        <div>Copyright © 2020</div>
-        <div>
-          <Link to="https://github.com/jp98smartins">Desenvolvido por João Pedro Martins</Link>
-        </div>
+        <div className="ft-copy">Copyright © 2020</div>
+        <a
+          href="https://github.com/jp98smartins"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div className="ft-dev">Desenvolvido por João Pedro Martins</div>
+        </a>
       </footer>
     </div>
   )

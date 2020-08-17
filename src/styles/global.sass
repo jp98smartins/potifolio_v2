@@ -143,6 +143,41 @@ header
         animation: sm-transl 1s
 
 /* Footer */
+
+@keyframes ft-dev
+  50%
+    border-bottom: 1px solid $yellow
+  100%
+    background-color: $yellow-10
+    border-bottom: 1px solid $yellow
+    
+
+.ft-data
+  width: 100%
+  height: 10vh
+  background-color: $dark
+  display: flex
+  align-items: center
+  justify-content: center
+  footer
+    width: 50%
+    height: 10vh
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .ft-copy
+      font-size: 14px
+      color: $white-50
+    a
+      text-decoration: none
+      color: $yellow
+      font-size: 14px
+      font-family: $secondary-font
+      .ft-dev
+        padding: 10px
+        &:hover
+          animation: ft-dev 2s linear forwards
+
 /* Home Page */
 
 #homepage
