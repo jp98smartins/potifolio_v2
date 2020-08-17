@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import HPDescription from "../components/HomePageDescription"
+import HomePage from "./homepage"
 import AboutMe from "./aboutme"
 import Experience from "./experience"
 import Projects from "./projects"
@@ -13,7 +13,7 @@ class Home extends Component {
       <div className="full-page">
         <Layout>
           <div id="homepage">
-            <HPDescription />
+            <HomePage />
           </div>
           <div id="aboutme">
             <AboutMe />
