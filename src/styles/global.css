@@ -426,6 +426,129 @@ header {
           align-items: center;
 }
 
+#aboutme .abt-data {
+  width: 50%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aboutme .abt-data .abt-header {
+  height: 5vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aboutme .abt-data .abt-header .abt-title {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#aboutme .abt-data .abt-header .abt-title span {
+  font-family: "Roboto Mono";
+  color: #ffce00;
+}
+
+#aboutme .abt-data .abt-header .abt-divider {
+  width: 83%;
+  height: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+#aboutme .abt-data .abt-body {
+  width: 100%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aboutme .abt-data .abt-body .abt-img {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aboutme .abt-data .abt-body .abt-img .img-back {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border: 1px solid #ffce00;
+}
+
+#aboutme .abt-data .abt-body .abt-img .img-overlay {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border: 1px solid #ffce00;
+}
+
+#aboutme .abt-data .abt-body .abt-img .img-overlay:hover {
+  background-color: rgba(255, 206, 0, 0.1);
+  z-index: 999;
+}
+
+#aboutme .abt-data .abt-body .abt-img .img-overlay img {
+  width: 250px;
+  height: 250px;
+}
+
+#aboutme .abt-data .abt-body .abt-img .i-1 {
+  margin: 0px 30px 30px 0px;
+}
+
+#aboutme .abt-data .abt-body .abt-img .i-2 {
+  margin: 30px 60px 0px 0px;
+}
+
+#aboutme .abt-data .abt-body .abt-text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+}
+
 /* Experiences Page */
 #experience {
   width: 100%;
