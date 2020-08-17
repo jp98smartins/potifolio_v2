@@ -2,7 +2,7 @@ import React from "react"
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="hp-data">
       <div className="hp-first-line">Oi, meu nome é</div>
       <div className="hp-second-line">João Pedro Martins</div>
       <div className="hp-third-line">Eu programo uns programas</div>
@@ -11,15 +11,13 @@ const HomePage = () => {
         & Full Stack criando aplicativos e websites responsivos, otimizados e
         com design moderno.
       </div>
-      <div className="hp-call-to-action">
-        <a
-          href="mailto:joaopedromartins@id.uff.br"
-          rel="noreferrer"
-          target="_blank"
-        >
-          Fale Comigo!
-        </a>
-      </div>
+      <a
+        href="mailto:joaopedromartins@id.uff.br"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <div className="hp-call-to-action">Fale Comigo!</div>
+      </a>
     </div>
   )
 }

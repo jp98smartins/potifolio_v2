@@ -15,17 +15,17 @@ class Home extends Component {
           <div id="homepage">
             <HPDescription />
           </div>
-          <div id="aboutme" style={{ height: 1000 }}>
+          <div id="aboutme">
             <AboutMe />
           </div>
-          <div id="experience" style={{ height: 1000 }}>
+          <div id="experience">
             <Experience />
           </div>
-          <div id="projects" style={{ height: 1000 }}>
+          <div id="projects">
             <Projects />
             <Link to="/archive">Archive</Link>
           </div>
-          <div id="contact" style={{ height: 1000 }}>
+          <div id="contact">
             <Contact />
           </div>
         </Layout>
