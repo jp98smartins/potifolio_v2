@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import logo from "../assets/logo/logo_yellow.png"
+import resume from "../assets/resume/JoaoPedroMartins_Curriculo.pdf"
 
 const Header = () => {
   return (
@@ -43,7 +44,7 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="#aboutme">
+                <a href={resume} rel="noreferrer" target="_blank">
                   <div>Currículo</div>
                 </a>
               </li>
