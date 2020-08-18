@@ -21,8 +21,8 @@ export const FeaturedProjectsLeft = props => {
       <div className="ft-proj-img"></div>
       <div className="ft-proj-tech">
         <div className="ft-proj-used-tech">
-          {props.techs.map(tech => (
-            <p>{tech}</p>
+          {props.techs.map((tech, index) => (
+            <p key={index}>{tech}</p>
           ))}
         </div>
         <div className="ft-proj-links">
@@ -47,8 +47,8 @@ export const FeaturedProjectsRight = props => {
     <div className="ft-proj-data-right">
       <div className="ft-proj-tech">
         <div className="ft-proj-used-tech">
-          {props.techs.map(tech => (
-            <p>{tech}</p>
+          {props.techs.map((tech, index) => (
+            <p key={index}>{tech}</p>
           ))}
         </div>
         <div className="ft-proj-links">
