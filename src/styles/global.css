@@ -548,6 +548,146 @@ header {
           align-items: center;
 }
 
+#experience .xp-data {
+  width: 60%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#experience .xp-data .xp-header {
+  height: 5vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#experience .xp-data .xp-header .xp-title {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#experience .xp-data .xp-header .xp-title span {
+  font-family: "Roboto Mono";
+  color: #ffce00;
+}
+
+#experience .xp-data .xp-header .xp-divider {
+  width: 80%;
+  height: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+#experience .xp-data .xp-body {
+  height: 60vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#experience .xp-data .xp-body .xp-job-menu {
+  height: 40vh;
+  width: 10%;
+  margin: 2%;
+  padding: 2%;
+  border-left: 2px solid #ffce00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#experience .xp-data .xp-body .xp-job-menu .xp-menu-opt {
+  width: 100%;
+  height: 5vh;
+  border: none;
+  font-family: "Montserrat";
+  cursor: pointer;
+  background-color: #131c21;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  outline: none;
+}
+
+#experience .xp-data .xp-body .xp-job-menu .active {
+  background-color: rgba(255, 206, 0, 0.1) !important;
+  color: #ffce00 !important;
+  border: 1px solid #ffce00 !important;
+}
+
+#experience .xp-data .xp-body .xp-job-description {
+  height: 40vh;
+  width: 50%;
+  margin: 2%;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#experience .xp-data .xp-body .xp-job-description .xp-job-name {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#experience .xp-data .xp-body .xp-job-description .xp-job-name a {
+  text-decoration: none;
+  margin: 2%;
+  font-family: "Roboto Mono";
+  color: #ffce00;
+}
+
+#experience .xp-data .xp-body .xp-job-description .xp-job-date {
+  margin: 2%;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#experience .xp-data .xp-body .xp-job-description .xp-job-tasks {
+  margin: 2%;
+  width: 100%;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#experience .xp-data .xp-body .xp-job-description .xp-job-tasks .arrow-right-icon {
+  font-size: 18px;
+  color: #ffce00;
+  margin-right: 2%;
+}
+
 /* Featured Projects */
 .ft-proj-data-left, .ft-proj-data-right {
   height: 35vh;
