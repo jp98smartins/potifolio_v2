@@ -1192,4 +1192,71 @@ header {
 #contact .ctc-data a .ctc-call-to-action:hover {
   background-color: rgba(255, 206, 0, 0.1);
 }
+
+/* 404 */
+.data-404 {
+  height: 100vh;
+  width: 100%;
+}
+
+.data-404 .components-404 {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data-404 .components-404 .title-404 {
+  padding: 2%;
+  font-family: "Roboto Mono";
+  font-size: 52px;
+  color: #ffce00;
+}
+
+.data-404 .components-404 .description-404 {
+  width: 25%;
+  padding: 2%;
+  text-align: center;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.data-404 .components-404 a {
+  text-decoration: none;
+}
+
+.data-404 .components-404 a .back-button-404 {
+  margin: 2%;
+  width: 120px;
+  height: 60px;
+  font-size: 16px;
+  font-family: "Roboto Mono";
+  color: #ffce00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ffce00;
+  border-radius: 5px;
+}
+
+.data-404 .components-404 a .back-button-404:hover {
+  background-color: rgba(255, 206, 0, 0.1);
+}
 /*# sourceMappingURL=global.css.map */

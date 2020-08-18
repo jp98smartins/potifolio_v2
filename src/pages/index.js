@@ -10,7 +10,7 @@ class Home extends Component {
   render() {
     return (
       <div className="full-page">
-        <Layout>
+        <Layout is404={false}>
           <div id="homepage">
             <HomePage />
           </div>

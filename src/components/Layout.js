@@ -6,7 +6,7 @@ import SocialMedia from "./SocialMedia"
 const Layout = props => {
   return (
     <div>
-      <Header />
+      <Header is404={props.is404} />
       <SocialMedia />
       {props.children}
       <Footer />
