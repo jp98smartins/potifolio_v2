@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import HomePage from "./homepage"
 import AboutMe from "./aboutme"
@@ -23,7 +22,6 @@ class Home extends Component {
           </div>
           <div id="projects">
             <Projects />
-            <Link to="/archive">Archive</Link>
           </div>
           <div id="contact">
             <Contact />
