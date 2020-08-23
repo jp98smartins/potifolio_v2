@@ -4,22 +4,28 @@ import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons"
 
 const duo3 = {
   name: "Duo3",
+  site: "http://sigoerp.com.br/",
   position: "Estagiário",
-  date: "Fev - Dez 2020",
-  task1: "Descrição das minhas atividades 01",
-  task2: "Descrição das minhas atividades 02",
-  task3: "Descrição das minhas atividades 03",
-  task4: "Descrição das minhas atividades 04",
+  date: "Fev - Presente",
+  description: [
+    "Projeto de extensão resultante de parceria entre a UFF e a Engie.",
+    "Encarregado da elaboração de um software para o controle de tráfego urbano.",
+    "O projeto todo foi realizado utilizando a metodologia ágil (Scrum) com sprints de 2 semanas.",
+    "O software foi produzido no Visual Studio utilizando C# e MySQL com objetivo de rodar no Windows.",
+  ],
 }
 
 const uff = {
   name: "UFF",
+  site: "http://www.uff.br/",
   position: "Estagiário",
   date: "Out - Fev 2019",
-  task1: "Descrição das minhas atividades 01",
-  task2: "Descrição das minhas atividades 02",
-  task3: "Descrição das minhas atividades 03",
-  task4: "Descrição das minhas atividades 04",
+  description: [
+    "Projeto de extensão resultante de parceria entre a UFF e a Engie.",
+    "Encarregado da elaboração de um software para o controle de tráfego urbano.",
+    "O projeto todo foi realizado utilizando a metodologia ágil (Scrum) com sprints de 2 semanas.",
+    "O software foi produzido no Visual Studio utilizando C# e MySQL com objetivo de rodar no Windows.",
+  ],
 }
 
 class experience extends Component {
@@ -67,81 +73,39 @@ class experience extends Component {
             <div className="xp-job-description">
               <div className="xp-job-name">
                 {duo3.position}
-                <a
-                  href="http://sigoerp.com.br/"
-                  rel="noreferrer"
-                  target="_blank"
-                >
+                <a href={duo3.site} rel="noreferrer" target="_blank">
                   @{duo3.name}
                 </a>
               </div>
               <div className="xp-job-date">{duo3.date}</div>
-              <div className="xp-job-tasks">
-                <FontAwesomeIcon
-                  icon={faAngleDoubleRight}
-                  className="arrow-right-icon"
-                />
-                {duo3.task1}
-              </div>
-              <div className="xp-job-tasks">
-                <FontAwesomeIcon
-                  icon={faAngleDoubleRight}
-                  className="arrow-right-icon"
-                />
-                {duo3.task2}
-              </div>
-              <div className="xp-job-tasks">
-                <FontAwesomeIcon
-                  icon={faAngleDoubleRight}
-                  className="arrow-right-icon"
-                />
-                {duo3.task3}
-              </div>
-              <div className="xp-job-tasks">
-                <FontAwesomeIcon
-                  icon={faAngleDoubleRight}
-                  className="arrow-right-icon"
-                />
-                {duo3.task4}
-              </div>
+              {duo3.description.map((task, index) => (
+                <div className="xp-job-tasks" key={index}>
+                  <FontAwesomeIcon
+                    icon={faAngleDoubleRight}
+                    className="arrow-right-icon"
+                  />
+                  {task}
+                </div>
+              ))}
             </div>
           ) : (
             <div className="xp-job-description">
               <div className="xp-job-name">
                 {uff.position}
-                <a href="http://www.uff.br/" rel="noreferrer" target="_blank">
+                <a href={uff.site} rel="noreferrer" target="_blank">
                   @{uff.name}
                 </a>
               </div>
               <div className="xp-job-date">{uff.date}</div>
-              <div className="xp-job-tasks">
-                <FontAwesomeIcon
-                  icon={faAngleDoubleRight}
-                  className="arrow-right-icon"
-                />
-                {uff.task1}
-              </div>
-              <div className="xp-job-tasks">
-                <FontAwesomeIcon
-                  icon={faAngleDoubleRight}
-                  className="arrow-right-icon"
-                />
-                {uff.task2}
-              </div>
-              <div className="xp-job-tasks">
-                <FontAwesomeIcon
-                  icon={faAngleDoubleRight}
-                  className="arrow-right-icon"
-                />
-                {uff.task3}
-              </div>
-              <div className="xp-job-tasks">
-                <FontAwesomeIcon
-                  icon={faAngleDoubleRight}
-                  className="arrow-right-icon"
-                />
-                {uff.task4}
-              </div>
+              {uff.description.map((task, index) => (
+                <div className="xp-job-tasks" key={index}>
+                  <FontAwesomeIcon
+                    icon={faAngleDoubleRight}
+                    className="arrow-right-icon"
+                  />
+                  {task}
+                </div>
+              ))}
             </div>
           )}
         </div>
