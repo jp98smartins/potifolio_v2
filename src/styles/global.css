@@ -485,36 +485,29 @@ header {
           align-items: center;
 }
 
-#aboutme .abt-data .abt-body .abt-img .img-back {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  border: 1px solid #ffce00;
-}
-
 #aboutme .abt-data .abt-body .abt-img .img-overlay {
   width: 250px;
   height: 250px;
-  position: absolute;
-  border: 1px solid #ffce00;
-}
-
-#aboutme .abt-data .abt-body .abt-img .img-overlay:hover {
-  background-color: rgba(255, 206, 0, 0.1);
-  z-index: 999;
+  position: relative;
+  border: 2px solid #ffce00;
+  border-radius: 5px;
 }
 
 #aboutme .abt-data .abt-body .abt-img .img-overlay img {
   width: 250px;
   height: 250px;
+  position: absolute;
 }
 
-#aboutme .abt-data .abt-body .abt-img .i-1 {
-  margin: 0px 30px 30px 0px;
+#aboutme .abt-data .abt-body .abt-img .img-overlay .overlay {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  background-color: rgba(255, 206, 0, 0.1);
 }
 
-#aboutme .abt-data .abt-body .abt-img .i-2 {
-  margin: 30px 60px 0px 0px;
+#aboutme .abt-data .abt-body .abt-img .img-overlay .overlay:hover {
+  background-color: transparent;
 }
 
 #aboutme .abt-data .abt-body .abt-text {
@@ -746,9 +739,34 @@ header {
 }
 
 .ft-proj-data-left .ft-proj-img {
-  border: 1px solid #fff;
   height: 100%;
   width: 60%;
+  margin: 0 2%;
+  cursor: pointer;
+  background-color: rgba(255, 206, 0, 0.1);
+  position: relative;
+  z-index: 0;
+}
+
+.ft-proj-data-left .ft-proj-img .ft-proj-image-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 206, 0, 0.1);
+  position: absolute;
+  z-index: 2;
+}
+
+.ft-proj-data-left .ft-proj-img .ft-proj-image-overlay:hover {
+  background-color: transparent;
+}
+
+.ft-proj-data-left .ft-proj-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: 1;
 }
 
 .ft-proj-data-left .ft-proj-tech {
@@ -901,9 +919,34 @@ header {
 }
 
 .ft-proj-data-right .ft-proj-img {
-  border: 1px solid #fff;
   height: 100%;
   width: 60%;
+  margin: 0 2%;
+  cursor: pointer;
+  background-color: rgba(255, 206, 0, 0.1);
+  position: relative;
+  z-index: 0;
+}
+
+.ft-proj-data-right .ft-proj-img .ft-proj-image-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 206, 0, 0.1);
+  position: absolute;
+  z-index: 2;
+}
+
+.ft-proj-data-right .ft-proj-img .ft-proj-image-overlay:hover {
+  background-color: transparent;
+}
+
+.ft-proj-data-right .ft-proj-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: 1;
 }
 
 .ft-proj-data-right .ft-proj-desc {

@@ -12,11 +12,15 @@ const aboutme = () => {
       </div>
       <div className="abt-body">
         <div className="abt-img">
-          <div className="img-back i-1"></div>
-          <div className="img-back i-2"></div>
-          <div className="img-overlay">
+          <a
+            className="img-overlay"
+            href="https://www.linkedin.com/in/jp98smartins/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <img src={abt_image} alt="Foto de Perfil do João Pedro Martins" />
-          </div>
+            <div className="overlay"></div>
+          </a>
         </div>
         <div className="abt-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iste
