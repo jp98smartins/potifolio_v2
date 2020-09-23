@@ -95,7 +95,7 @@ header
             height: 30%
             padding: 10px 20px 10px 20px
             border: 2px solid $yellow
-            border-radius: 5pxs
+            border-radius: 5px
             color: $yellow
             &:hover
               background-color: $yellow-10
@@ -754,63 +754,199 @@ header
 
 
 /* Contact Page */
-  
-#contact
-  width: 100%
-  height: 100vh
-  display: flex
-  justify-content: space-around
-  align-items: center
-  .ctc-data
-    width: 60%
-    height: 50vh
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .social-media
+    display: none
+
+  #contact
+    width: 100%
+    height: 80vh  // Mudar Aqui
     display: flex
-    flex-direction: column
     justify-content: space-around
     align-items: center
-    .ctc-header
-      height: 5vh
-      width: 100%
+    .ctc-data
+      width: 90%  // Mudar Aqui
+      height: 70vh  // Mudar Aqui
       display: flex
-      justify-content: space-between
+      flex-direction: column
+      justify-content: space-around
       align-items: center
-      .ctc-title
-        font-size: 20px
-        color: $white-60
-        span
-          font-family: $secondary-font
-          color: $yellow
-      .ctc-divider
-        width: 80%
-        height: 0px
-        border: 1px solid $white-60
-    .ctc-first-line
-      font-size: 48px
-      color: $white
-    .ctc-second-line
-      width: 70%
-      p
-        margin: 0px
-        padding: 0px
-        font-size: 24px
-        text-align: center
-        color: $white-60
-    a
-      font-size: 16px
-      font-family: $secondary-font
-      color: $yellow
-      text-decoration: none
-      .ctc-call-to-action
-        width: 130px
-        height: 50px
-        padding: 5px 10px
-        border: 2px solid $yellow
-        border-radius: 5px
+      .ctc-header
+        height: 10vh  // Mudar Aqui
+        width: 100%
         display: flex
-        justify-content: center
+        justify-content: space-between
         align-items: center
-        &:hover
-          background-color: $yellow-10
+        .ctc-title
+          font-size: 18px  // Mudar Aqui
+          color: $white-60
+          span
+            font-family: $secondary-font
+            color: $yellow
+        .ctc-divider
+          width: 35%  // Mudar Aqui
+          height: 0px
+          border: 1px solid $white-60
+      .ctc-first-line
+        font-size: 24px  // Mudar Aqui
+        color: $white
+      .ctc-second-line
+        width: 80%  // Mudar Aqui
+        p
+          margin: 0px
+          padding: 0px
+          font-size: 18px  // Mudar Aqui
+          text-align: center
+          color: $white-60
+      a
+        font-size: 14px
+        font-family: $secondary-font
+        color: $yellow
+        text-decoration: none
+        .ctc-call-to-action
+          width: 110px  // Mudar Aqui
+          height: 30px  // Mudar Aqui
+          padding: 5px 10px
+          border: 2px solid $yellow
+          border-radius: 5px
+          display: flex
+          justify-content: center
+          align-items: center
+          &:hover
+            background-color: $yellow-10
+
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+  .social-media
+    display: none
+
+  #contact
+    width: 100%
+    height: 80vh  // Mudar Aqui
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .ctc-data
+      width: 90%  // Mudar Aqui
+      height: 70vh  // Mudar Aqui
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      .ctc-header
+        height: 10vh  // Mudar Aqui
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .ctc-title
+          font-size: 18px  // Mudar Aqui
+          color: $white-60
+          span
+            font-family: $secondary-font
+            color: $yellow
+        .ctc-divider
+          width: 35%  // Mudar Aqui
+          height: 0px
+          border: 1px solid $white-60
+      .ctc-first-line
+        font-size: 24px  // Mudar Aqui
+        color: $white
+      .ctc-second-line
+        width: 80%  // Mudar Aqui
+        p
+          margin: 0px
+          padding: 0px
+          font-size: 18px  // Mudar Aqui
+          text-align: center
+          color: $white-60
+      a
+        font-size: 14px
+        font-family: $secondary-font
+        color: $yellow
+        text-decoration: none
+        .ctc-call-to-action
+          width: 110px  // Mudar Aqui
+          height: 30px  // Mudar Aqui
+          padding: 5px 10px
+          border: 2px solid $yellow
+          border-radius: 5px
+          display: flex
+          justify-content: center
+          align-items: center
+          &:hover
+            background-color: $yellow-10
+
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+  .social-media
+    display: contents
+
+  #contact
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .ctc-data
+      width: 60%
+      height: 50vh
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      .ctc-header
+        height: 5vh
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .ctc-title
+          font-size: 20px
+          color: $white-60
+          span
+            font-family: $secondary-font
+            color: $yellow
+        .ctc-divider
+          width: 80%
+          height: 0px
+          border: 1px solid $white-60
+      .ctc-first-line
+        font-size: 48px
+        color: $white
+      .ctc-second-line
+        width: 70%
+        p
+          margin: 0px
+          padding: 0px
+          font-size: 24px
+          text-align: center
+          color: $white-60
+      a
+        font-size: 16px
+        font-family: $secondary-font
+        color: $yellow
+        text-decoration: none
+        .ctc-call-to-action
+          width: 130px
+          height: 50px
+          padding: 5px 10px
+          border: 2px solid $yellow
+          border-radius: 5px
+          display: flex
+          justify-content: center
+          align-items: center
+          &:hover
+            background-color: $yellow-10
 
 /* 404 Page */
 
