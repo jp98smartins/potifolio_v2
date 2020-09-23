@@ -283,55 +283,196 @@ header
             animation: ft-dev 2s linear forwards
 
 /* Home Page */
-#homepage
-  width: 100%
-  height: 100vh
-  display: flex
-  justify-content: center
-  align-items: center
-  .hp-data
-    margin-right: 15%
-    width: 50%
-    height: 50vh
+@media only screen and (min-width: 300px)
+  #homepage
+    width: 100%
+    height: 90vh  // Mudei aqui!
     display: flex
-    flex-direction: column
     justify-content: center
-    align-items: flex-start
-    .hp-first-line
-      font-family: $secondary-font
-      font-size: 16px
-      color: $yellow
-    .hp-second-line
-      font-size: 48px
-      color: $white
-    .hp-third-line
-      margin-bottom: 20px
-      font-size: 36px
-      color: $white-60
-    .hp-fourth-line
-      margin-bottom: 15px
-      width: 75%
-      font-size: 24px
-      color: $white-50
-    a
-      font-size: 16px
-      font-family: $secondary-font
-      color: $yellow
-      text-decoration: none
-      .hp-call-to-action
-        width: 130px
-        height: 50px
-        padding: 5px 10px
-        border: 2px solid $yellow
-        border-radius: 5px
-        display: flex
-        justify-content: center
-        align-items: center
-        &:hover
-          background-color: $yellow-10
-      
-/* About Me Page */
+    align-items: center
+    .hp-data
+      width: 70%  // Mudei aqui!
+      height: 60vh  // Mudei aqui!
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start  // Mudei aqui!
+      .hp-first-line
+        font-family: $secondary-font
+        font-size: 12px  // Mudei aqui!
+        color: $yellow
+      .hp-second-line
+        font-size: 26px  // Mudei aqui!
+        color: $white
+      .hp-third-line
+        margin-bottom: 20px
+        font-size: 18px  // Mudei aqui!
+        color: $white-60
+      .hp-fourth-line
+        margin-bottom: 15px
+        width: 75%
+        font-size: 16px  // Mudei aqui!
+        color: $white-50
+      a
+        font-size: 14px  // Mudei aqui!
+        font-family: $secondary-font
+        color: $yellow
+        text-decoration: none
+        .hp-call-to-action
+          width: 110px  // Mudei aqui!
+          height: 30px  // Mudei aqui!
+          padding: 5px 10px
+          border: 2px solid $yellow
+          border-radius: 5px
+          display: flex
+          justify-content: center
+          align-items: center
+          &:hover
+            background-color: $yellow-10
 
+@media only screen and (min-width: 400px)
+  #homepage
+    width: 100%
+    height: 90vh  // Mudei aqui!
+    display: flex
+    justify-content: center
+    align-items: center
+    .hp-data
+      width: 70%  // Mudei aqui!
+      height: 60vh  // Mudei aqui!
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start  // Mudei aqui!
+      .hp-first-line
+        font-family: $secondary-font
+        font-size: 14px  // Mudei aqui!
+        color: $yellow
+      .hp-second-line
+        font-size: 28px  // Mudei aqui!
+        color: $white
+      .hp-third-line
+        margin-bottom: 20px
+        font-size: 20px  // Mudei aqui!
+        color: $white-60
+      .hp-fourth-line
+        margin-bottom: 15px
+        width: 75%
+        font-size: 16px  // Mudei aqui!
+        color: $white-50
+      a
+        font-size: 14px  // Mudei aqui!
+        font-family: $secondary-font
+        color: $yellow
+        text-decoration: none
+        .hp-call-to-action
+          width: 110px  // Mudei aqui!
+          height: 30px  // Mudei aqui!
+          padding: 5px 10px 
+          border: 2px solid $yellow
+          border-radius: 5px
+          display: flex
+          justify-content: center
+          align-items: center
+          &:hover
+            background-color: $yellow-10
+
+@media only screen and (min-width: 768px)
+  #homepage
+    width: 100%
+    height: 90vh  // Mudei aqui!
+    display: flex
+    justify-content: center
+    align-items: center
+    .hp-data
+      width: 70%  // Mudei aqui!
+      height: 60vh  // Mudei aqui!
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start  // Mudei aqui!
+      .hp-first-line
+        font-family: $secondary-font
+        font-size: 14px  // Mudei aqui!
+        color: $yellow
+      .hp-second-line
+        font-size: 32px  // Mudei aqui!
+        color: $white
+      .hp-third-line
+        margin-bottom: 20px
+        font-size: 24px  // Mudei aqui!
+        color: $white-60
+      .hp-fourth-line
+        margin-bottom: 15px
+        width: 75%
+        font-size: 18px  // Mudei aqui!
+        color: $white-50
+      a
+        font-size: 16px  // Mudei aqui!
+        font-family: $secondary-font
+        color: $yellow
+        text-decoration: none
+        .hp-call-to-action
+          width: 130px  // Mudei aqui!
+          height: 50px  // Mudei aqui!
+          padding: 5px 10px 
+          border: 2px solid $yellow
+          border-radius: 5px
+          display: flex
+          justify-content: center
+          align-items: center
+          &:hover
+            background-color: $yellow-10
+
+@media only screen and (min-width: 1200px)
+  #homepage
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .hp-data
+      margin-right: 15%
+      width: 50%
+      height: 50vh
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+      .hp-first-line
+        font-family: $secondary-font
+        font-size: 16px
+        color: $yellow
+      .hp-second-line
+        font-size: 48px
+        color: $white
+      .hp-third-line
+        margin-bottom: 20px
+        font-size: 36px
+        color: $white-60
+      .hp-fourth-line
+        margin-bottom: 15px
+        width: 75%
+        font-size: 24px
+        color: $white-50
+      a
+        font-size: 16px
+        font-family: $secondary-font
+        color: $yellow
+        text-decoration: none
+        .hp-call-to-action
+          width: 130px
+          height: 50px
+          padding: 5px 10px
+          border: 2px solid $yellow
+          border-radius: 5px
+          display: flex
+          justify-content: center
+          align-items: center
+          &:hover
+            background-color: $yellow-10
+
+/* About Me Page */
 #aboutme
   width: 100%
   height: 100vh
@@ -400,7 +541,6 @@ header
         padding: 10px
 
 /* Experiences Page */
-
 #experience
   width: 100%
   height: 100vh
