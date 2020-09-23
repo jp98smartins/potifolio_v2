@@ -473,72 +473,153 @@ header
             background-color: $yellow-10
 
 /* About Me Page */
-#aboutme
-  width: 100%
-  height: 100vh
-  display: flex
-  justify-content: center
-  align-items: center
-  .abt-data
-    width: 60%
-    height: 50vh
+@media only screen and (min-width: 300px)
+  #aboutme
+    width: 100%
+    height: 100vh
     display: flex
-    flex-direction: column
-    justify-content: space-around
+    justify-content: center
     align-items: center
-    .abt-header
-      height: 5vh
-      width: 100%
+    .abt-data
+      width: 60%
+      height: 80vh
       display: flex
-      justify-content: space-between
+      flex-direction: column
+      justify-content: space-around
       align-items: center
-      .abt-title
-        font-size: 20px
-        color: $white-60
-        span
-          font-family: $secondary-font
-          color: $yellow
-      .abt-divider
-        width: 86%
-        height: 0px
-        border: 1px solid $white-60
-    .abt-body
-      width: 100%
-      height: 40vh
+      .abt-header
+        height: 5vh
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .abt-title
+          font-size: 20px
+          color: $white-60
+          span
+            font-family: $secondary-font
+            color: $yellow
+        .abt-divider
+          width: 86%
+          height: 0px
+          border: 1px solid $white-60
+      .abt-body
+        width: 100%
+        height: 40vh
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        .abt-img
+          width: 80%
+          height: 100%
+          display: flex
+          justify-content: center
+          align-items: center
+          .img-overlay
+            width: 250px
+            height: 250px   
+            position: relative
+            border: 2px solid $yellow
+            border-radius: 5px
+            img
+              width: 250px
+              height: 250px
+              position: absolute
+            .overlay
+              width: 250px
+              height: 250px
+              position: absolute
+              background-color: $yellow-10
+              &:hover
+                background-color: transparent
+        .abt-text
+          width: 80%
+          display: flex
+          justify-content: center
+          align-items: center
+          font-size: 14px
+          color: $white-60
+          padding: 10px
+
+
+// @media only screen and (min-width: 400px)
+
+// @media only screen and (min-width: 500px)
+
+// @media only screen and (min-width: 600px)
+
+// @media only screen and (min-width: 768px)
+
+// @media only screen and (min-width: 992px)
+
+@media only screen and (min-width: 1200px)
+  #aboutme
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .abt-data
+      width: 60%
+      height: 50vh
       display: flex
-      justify-content: center
+      flex-direction: column
+      justify-content: space-around
       align-items: center
-      .abt-img
-        width: 50%
-        height: 100%
+      .abt-header
+        height: 5vh
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .abt-title
+          font-size: 20px
+          color: $white-60
+          span
+            font-family: $secondary-font
+            color: $yellow
+        .abt-divider
+          width: 86%
+          height: 0px
+          border: 1px solid $white-60
+      .abt-body
+        width: 100%
+        height: 40vh
         display: flex
         justify-content: center
         align-items: center
-        .img-overlay
-          width: 250px
-          height: 250px   
-          position: relative
-          border: 2px solid $yellow
-          border-radius: 5px
-          img
+        .abt-img
+          width: 50%
+          height: 100%
+          display: flex
+          justify-content: center
+          align-items: center
+          .img-overlay
             width: 250px
-            height: 250px
-            position: absolute
-          .overlay
-            width: 250px
-            height: 250px
-            position: absolute
-            background-color: $yellow-10
-            &:hover
-              background-color: transparent
-      .abt-text
-        width: 50%
-        display: flex
-        justify-content: center
-        align-items: center
-        font-size: 18px
-        color: $white-60
-        padding: 10px
+            height: 250px   
+            position: relative
+            border: 2px solid $yellow
+            border-radius: 5px
+            img
+              width: 250px
+              height: 250px
+              position: absolute
+            .overlay
+              width: 250px
+              height: 250px
+              position: absolute
+              background-color: $yellow-10
+              &:hover
+                background-color: transparent
+        .abt-text
+          width: 50%
+          display: flex
+          justify-content: center
+          align-items: center
+          font-size: 18px
+          color: $white-60
+          padding: 10px
 
 /* Experiences Page */
 #experience

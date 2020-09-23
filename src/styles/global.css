@@ -802,134 +802,247 @@ header {
 }
 
 /* About Me Page */
-#aboutme {
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media only screen and (min-width: 300px) {
+  #aboutme {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutme .abt-data {
+    width: 60%;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutme .abt-data .abt-header {
+    height: 5vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutme .abt-data .abt-header .abt-title {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  #aboutme .abt-data .abt-header .abt-title span {
+    font-family: "Roboto Mono";
+    color: #ffce00;
+  }
+  #aboutme .abt-data .abt-header .abt-divider {
+    width: 86%;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  #aboutme .abt-data .abt-body {
+    width: 100%;
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutme .abt-data .abt-body .abt-img {
+    width: 80%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutme .abt-data .abt-body .abt-img .img-overlay {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    border: 2px solid #ffce00;
+    border-radius: 5px;
+  }
+  #aboutme .abt-data .abt-body .abt-img .img-overlay img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+  }
+  #aboutme .abt-data .abt-body .abt-img .img-overlay .overlay {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-color: rgba(255, 206, 0, 0.1);
+  }
+  #aboutme .abt-data .abt-body .abt-img .img-overlay .overlay:hover {
+    background-color: transparent;
+  }
+  #aboutme .abt-data .abt-body .abt-text {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+  }
 }
 
-#aboutme .abt-data {
-  width: 60%;
-  height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#aboutme .abt-data .abt-header {
-  height: 5vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#aboutme .abt-data .abt-header .abt-title {
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-#aboutme .abt-data .abt-header .abt-title span {
-  font-family: "Roboto Mono";
-  color: #ffce00;
-}
-
-#aboutme .abt-data .abt-header .abt-divider {
-  width: 86%;
-  height: 0px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-}
-
-#aboutme .abt-data .abt-body {
-  width: 100%;
-  height: 40vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#aboutme .abt-data .abt-body .abt-img {
-  width: 50%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#aboutme .abt-data .abt-body .abt-img .img-overlay {
-  width: 250px;
-  height: 250px;
-  position: relative;
-  border: 2px solid #ffce00;
-  border-radius: 5px;
-}
-
-#aboutme .abt-data .abt-body .abt-img .img-overlay img {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-}
-
-#aboutme .abt-data .abt-body .abt-img .img-overlay .overlay {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  background-color: rgba(255, 206, 0, 0.1);
-}
-
-#aboutme .abt-data .abt-body .abt-img .img-overlay .overlay:hover {
-  background-color: transparent;
-}
-
-#aboutme .abt-data .abt-body .abt-text {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.6);
-  padding: 10px;
+@media only screen and (min-width: 1200px) {
+  #aboutme {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutme .abt-data {
+    width: 60%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutme .abt-data .abt-header {
+    height: 5vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutme .abt-data .abt-header .abt-title {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  #aboutme .abt-data .abt-header .abt-title span {
+    font-family: "Roboto Mono";
+    color: #ffce00;
+  }
+  #aboutme .abt-data .abt-header .abt-divider {
+    width: 86%;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  #aboutme .abt-data .abt-body {
+    width: 100%;
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutme .abt-data .abt-body .abt-img {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutme .abt-data .abt-body .abt-img .img-overlay {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    border: 2px solid #ffce00;
+    border-radius: 5px;
+  }
+  #aboutme .abt-data .abt-body .abt-img .img-overlay img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+  }
+  #aboutme .abt-data .abt-body .abt-img .img-overlay .overlay {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-color: rgba(255, 206, 0, 0.1);
+  }
+  #aboutme .abt-data .abt-body .abt-img .img-overlay .overlay:hover {
+    background-color: transparent;
+  }
+  #aboutme .abt-data .abt-body .abt-text {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+  }
 }
 
 /* Experiences Page */
