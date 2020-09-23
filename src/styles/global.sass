@@ -101,7 +101,6 @@ header
               background-color: $yellow-10
 
 /* Social Medias */
-
 @keyframes sm-transl
   100%
     transform: translateY(-5px)
@@ -139,7 +138,6 @@ header
         animation: sm-transl 1s ease forwards
 
 /* Footer */
-
 @keyframes ft-dev
   50%
     border-bottom: 1px solid $yellow
@@ -147,35 +145,143 @@ header
     background-color: $yellow-10
     border-bottom: 1px solid $yellow
     
-
-.ft-data
-  width: 100%
-  height: 10vh
-  background-color: $dark
-  display: flex
-  align-items: center
-  justify-content: center
-  footer
-    width: 50%
+@media only screen and (min-width: 300px)
+  .ft-data
+    width: 100%
     height: 10vh
+    background-color: $dark
     display: flex
-    justify-content: space-around
     align-items: center
-    .ft-copy
-      font-size: 14px
-      color: $white-50
-    a
-      text-decoration: none
-      color: $yellow
-      font-size: 14px
-      font-family: $secondary-font
-      .ft-dev
-        padding: 10px
-        &:hover
-          animation: ft-dev 2s linear forwards
+    justify-content: center
+    footer
+      width: 100%  // Mudei aqui
+      height: 10vh
+      display: flex
+      justify-content: space-around
+      align-items: center
+      .ft-copy
+        font-size: 10px  // Mudei aqui
+        color: $white-50
+      a
+        text-decoration: none
+        color: $yellow
+        font-size: 10px  // Mudei aqui
+        font-family: $secondary-font
+        .ft-dev
+          padding: 10px
+          &:hover
+            animation: ft-dev 2s linear forwards
+
+@media only screen and (min-width: 500px)
+  .ft-data
+    width: 100%
+    height: 10vh
+    background-color: $dark
+    display: flex
+    align-items: center
+    justify-content: center
+    footer
+      width: 90%  // Mudei aqui
+      height: 10vh
+      display: flex
+      justify-content: space-around
+      align-items: center
+      .ft-copy
+        font-size: 12px  // Mudei aqui
+        color: $white-50
+      a
+        text-decoration: none
+        color: $yellow
+        font-size: 12px  // Mudei aqui
+        font-family: $secondary-font
+        .ft-dev
+          padding: 10px
+          &:hover
+            animation: ft-dev 2s linear forwards
+
+
+@media only screen and (min-width: 600px)
+  .ft-data
+    width: 100%
+    height: 10vh
+    background-color: $dark
+    display: flex
+    align-items: center
+    justify-content: center
+    footer
+      width: 80%  // Mudei aqui
+      height: 10vh
+      display: flex
+      justify-content: space-around
+      align-items: center
+      .ft-copy
+        font-size: 12px  // Mudei aqui
+        color: $white-50
+      a
+        text-decoration: none
+        color: $yellow
+        font-size: 12px  // Mudei aqui
+        font-family: $secondary-font
+        .ft-dev
+          padding: 10px
+          &:hover
+            animation: ft-dev 2s linear forwards
+  
+@media only screen and (min-width: 768px)
+  .ft-data
+    width: 100%
+    height: 10vh
+    background-color: $dark
+    display: flex
+    align-items: center
+    justify-content: center
+    footer
+      width: 70%  // Mudei aqui
+      height: 10vh
+      display: flex
+      justify-content: space-around
+      align-items: center
+      .ft-copy
+        font-size: 14px  // Mudei aqui
+        color: $white-50
+      a
+        text-decoration: none
+        color: $yellow
+        font-size: 14px  // Mudei aqui
+        font-family: $secondary-font
+        .ft-dev
+          padding: 10px
+          &:hover
+            animation: ft-dev 2s linear forwards
+
+@media only screen and (min-width: 1200px)
+  .ft-data
+    width: 100%
+    height: 10vh
+    background-color: $dark
+    display: flex
+    align-items: center
+    justify-content: center
+    footer
+      width: 50%
+      height: 10vh
+      display: flex
+      justify-content: space-around
+      align-items: center
+      .ft-copy
+        font-size: 14px
+        color: $white-50
+      a
+        text-decoration: none
+        color: $yellow
+        font-size: 14px
+        font-family: $secondary-font
+        .ft-dev
+          padding: 10px
+          &:hover
+            animation: ft-dev 2s linear forwards
 
 /* Home Page */
-
 #homepage
   width: 100%
   height: 100vh
@@ -1199,3 +1305,17 @@ header
       align-items: center
       &:hover
         background-color: $yellow-10
+
+// @media only screen and (min-width: 300px)
+
+// @media only screen and (min-width: 400px)
+
+// @media only screen and (min-width: 500px)
+
+// @media only screen and (min-width: 600px)
+
+// @media only screen and (min-width: 768px)
+
+// @media only screen and (min-width: 992px)
+
+// @media only screen and (min-width: 1200px)

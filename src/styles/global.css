@@ -261,53 +261,234 @@ header {
   }
 }
 
-.ft-data {
-  width: 100%;
-  height: 10vh;
-  background-color: #131c21;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media only screen and (min-width: 300px) {
+  .ft-data {
+    width: 100%;
+    height: 10vh;
+    background-color: #131c21;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ft-data footer {
+    width: 100%;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-data footer .ft-copy {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ft-data footer a {
+    text-decoration: none;
+    color: #ffce00;
+    font-size: 10px;
+    font-family: "Roboto Mono";
+  }
+  .ft-data footer a .ft-dev {
+    padding: 10px;
+  }
+  .ft-data footer a .ft-dev:hover {
+    -webkit-animation: ft-dev 2s linear forwards;
+            animation: ft-dev 2s linear forwards;
+  }
 }
 
-.ft-data footer {
-  width: 50%;
-  height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media only screen and (min-width: 500px) {
+  .ft-data {
+    width: 100%;
+    height: 10vh;
+    background-color: #131c21;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ft-data footer {
+    width: 90%;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-data footer .ft-copy {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ft-data footer a {
+    text-decoration: none;
+    color: #ffce00;
+    font-size: 12px;
+    font-family: "Roboto Mono";
+  }
+  .ft-data footer a .ft-dev {
+    padding: 10px;
+  }
+  .ft-data footer a .ft-dev:hover {
+    -webkit-animation: ft-dev 2s linear forwards;
+            animation: ft-dev 2s linear forwards;
+  }
 }
 
-.ft-data footer .ft-copy {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
+@media only screen and (min-width: 600px) {
+  .ft-data {
+    width: 100%;
+    height: 10vh;
+    background-color: #131c21;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ft-data footer {
+    width: 80%;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-data footer .ft-copy {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ft-data footer a {
+    text-decoration: none;
+    color: #ffce00;
+    font-size: 12px;
+    font-family: "Roboto Mono";
+  }
+  .ft-data footer a .ft-dev {
+    padding: 10px;
+  }
+  .ft-data footer a .ft-dev:hover {
+    -webkit-animation: ft-dev 2s linear forwards;
+            animation: ft-dev 2s linear forwards;
+  }
 }
 
-.ft-data footer a {
-  text-decoration: none;
-  color: #ffce00;
-  font-size: 14px;
-  font-family: "Roboto Mono";
+@media only screen and (min-width: 768px) {
+  .ft-data {
+    width: 100%;
+    height: 10vh;
+    background-color: #131c21;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ft-data footer {
+    width: 70%;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-data footer .ft-copy {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ft-data footer a {
+    text-decoration: none;
+    color: #ffce00;
+    font-size: 14px;
+    font-family: "Roboto Mono";
+  }
+  .ft-data footer a .ft-dev {
+    padding: 10px;
+  }
+  .ft-data footer a .ft-dev:hover {
+    -webkit-animation: ft-dev 2s linear forwards;
+            animation: ft-dev 2s linear forwards;
+  }
 }
 
-.ft-data footer a .ft-dev {
-  padding: 10px;
-}
-
-.ft-data footer a .ft-dev:hover {
-  -webkit-animation: ft-dev 2s linear forwards;
-          animation: ft-dev 2s linear forwards;
+@media only screen and (min-width: 1200px) {
+  .ft-data {
+    width: 100%;
+    height: 10vh;
+    background-color: #131c21;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ft-data footer {
+    width: 50%;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-data footer .ft-copy {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ft-data footer a {
+    text-decoration: none;
+    color: #ffce00;
+    font-size: 14px;
+    font-family: "Roboto Mono";
+  }
+  .ft-data footer a .ft-dev {
+    padding: 10px;
+  }
+  .ft-data footer a .ft-dev:hover {
+    -webkit-animation: ft-dev 2s linear forwards;
+            animation: ft-dev 2s linear forwards;
+  }
 }
 
 /* Home Page */
