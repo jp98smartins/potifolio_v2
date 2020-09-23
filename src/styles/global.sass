@@ -108,34 +108,35 @@ header
 @keyframes sm-transl-email
   100%
     transform: translateX(5px)
-    
-.social-media
-  position: fixed
-  bottom: 0px
-  right: 150px
-  div
-    height: 50px
-    width: 50px
-    margin: 15px
-    display: flex
-    justify-content: center
-    align-items: center
-    &:first-child
-      justify-content: start
+
+@media only screen and (min-width: 1200px)
+  .social-media
+    position: fixed
+    bottom: 0px
+    right: 150px
+    div
+      height: 50px
+      width: 50px
+      margin: 15px
+      display: flex
+      justify-content: center
       align-items: center
-      transform: rotate(-90deg)
+      &:first-child
+        justify-content: start
+        align-items: center
+        transform: rotate(-90deg)
+        a
+          font-size: 15px
+          font-family: $secondary-font
+          &:hover
+            animation: sm-transl-email 1s ease forwards
       a
-        font-size: 15px
-        font-family: $secondary-font
+        color: $white-60
+        text-decoration: none
+        font-size: 25px
         &:hover
-          animation: sm-transl-email 1s ease forwards
-    a
-      color: $white-60
-      text-decoration: none
-      font-size: 25px
-      &:hover
-        color: $yellow
-        animation: sm-transl 1s ease forwards
+          color: $yellow
+          animation: sm-transl 1s ease forwards
 
 /* Footer */
 @keyframes ft-dev

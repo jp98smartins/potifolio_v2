@@ -187,58 +187,54 @@ header {
   }
 }
 
-.social-media {
-  position: fixed;
-  bottom: 0px;
-  right: 150px;
-}
-
-.social-media div {
-  height: 50px;
-  width: 50px;
-  margin: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.social-media div:first-child {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
-.social-media div:first-child a {
-  font-size: 15px;
-  font-family: "Roboto Mono";
-}
-
-.social-media div:first-child a:hover {
-  -webkit-animation: sm-transl-email 1s ease forwards;
-          animation: sm-transl-email 1s ease forwards;
-}
-
-.social-media div a {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  font-size: 25px;
-}
-
-.social-media div a:hover {
-  color: #ffce00;
-  -webkit-animation: sm-transl 1s ease forwards;
-          animation: sm-transl 1s ease forwards;
+@media only screen and (min-width: 1200px) {
+  .social-media {
+    position: fixed;
+    bottom: 0px;
+    right: 150px;
+  }
+  .social-media div {
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .social-media div:first-child {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .social-media div:first-child a {
+    font-size: 15px;
+    font-family: "Roboto Mono";
+  }
+  .social-media div:first-child a:hover {
+    -webkit-animation: sm-transl-email 1s ease forwards;
+            animation: sm-transl-email 1s ease forwards;
+  }
+  .social-media div a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 25px;
+  }
+  .social-media div a:hover {
+    color: #ffce00;
+    -webkit-animation: sm-transl 1s ease forwards;
+            animation: sm-transl 1s ease forwards;
+  }
 }
 
 /* Footer */
