@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons"
 
+// Testando build
 const duo3 = {
   name: "Duo3",
   site: "http://sigoerp.com.br/",
