@@ -212,7 +212,7 @@ class experience extends Component {
               {uff.name}
             </button>
           </div>
-          {getExpDescription()}
+          {this.getExpDescription()}
         </div>
       </div>
     )
