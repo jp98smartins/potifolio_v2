@@ -7,11 +7,11 @@ const SocialMedia = () => {
     <div className="social-media">
       <div className="email">
         <a
-          href="mailto:joaopedromartins@id.uff.br"
+          href="mailto:contato@joaopedromartins.com.br"
           rel="noreferrer"
           target="_blank"
         >
-          joaopedromartins@id.uff.br
+          contato@joaopedromartins.com.br
         </a>
       </div>
       <div>
