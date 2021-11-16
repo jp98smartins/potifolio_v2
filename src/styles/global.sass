@@ -206,6 +206,7 @@ header
         span
           margin-right: 10px
           font-weight: bold
+          font-family: $secondary-font
           color: $yellow
       .menu-resume
         border: 2px solid $yellow
@@ -745,7 +746,7 @@ header
         justify-content: space-between
         align-items: center
         .abt-title
-          font-size: 18px
+          font-size: 16px
           color: $white-60
           span
             font-family: $secondary-font
@@ -1151,92 +1152,698 @@ header
           text-justify: auto
 
 /* Experiences Page */
-#experience
-  width: 100%
-  height: 100vh
-  display: flex
-  justify-content: center
-  align-items: center
-  .xp-data
-    width: 60%
-    height: 70vh
+
+@media only screen and (min-width: 300px)
+  #experience
+    width: 100%
+    height: 100vh
     display: flex
-    flex-direction: column
-    justify-content: space-around
+    justify-content: center
     align-items: center
-    .xp-header
-      height: 5vh
-      width: 100%
+    .xp-data
+      width: 90%
+      height: 70vh
       display: flex
-      justify-content: space-between
+      flex-direction: column
+      justify-content: space-around
       align-items: center
-      .xp-title
-        font-size: 20px
-        color: $white-60
-        span
-          font-family: $secondary-font
-          color: $yellow
-      .xp-divider
-        width: 82%
-        height: 0px
-        border: 1px solid $white-60
-    .xp-body
-      height: 60vh
-      width: 100%
-      display: flex
-      justify-content: center
-      align-items: center
-      .xp-job-menu
-        height: 40vh
-        width: 10%
-        margin: 2%
-        padding: 2%
-        border-left: 2px solid $yellow
+      .xp-header
+        height: 5vh
+        width: 100%
         display: flex
-        flex-direction: column
-        .xp-menu-opt
-          width: 100%
-          height: 5vh
-          border: none
-          font-family: $main-font
-          cursor: pointer
-          background-color: $dark
-          color: $white-80
-          font-size: 18px
-          outline: none
-        .active
-          background-color: $yellow-10 !important
-          color: $yellow !important
-          border: 1px solid $yellow !important
-      .xp-job-description
-        height: 40vh
-        width: 50%
-        margin: 2%
-        padding: 2%
-        display: flex
-        flex-direction: column
-        .xp-job-name
-          font-size: 24px
-          color: $white-80
-          a
-            text-decoration: none
-            margin: 2%
+        justify-content: space-between
+        align-items: center
+        .xp-title
+          font-size: 16px
+          color: $white-60
+          span
             font-family: $secondary-font
             color: $yellow
-        .xp-job-date
+        .xp-divider
+          width: 35%
+          height: 0px
+          border: 1px solid $white-60
+      .xp-body
+        height: 60vh
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .xp-job-menu
+          height: 5vh
+          width: 90%
+          border-bottom: 2px solid $yellow
+          display: flex
+          overflow-x: auto;
+          overflow-y: hidden;
+          .xp-menu-opt
+            width: 100%
+            height: 5vh
+            border: none
+            font-family: $main-font
+            cursor: pointer
+            background-color: $dark
+            color: $white-80
+            font-size: 18px
+            outline: none
+          .active
+            background-color: $yellow-10 !important
+            color: $yellow !important
+            border: 1px solid $yellow !important
+        .xp-job-description
+          height: 40vh
+          width: 90%
           margin: 2%
-          font-family: $secondary-font
-          font-size: 14px
-          color: $white-50
-        .xp-job-tasks
+          padding: 2%
+          display: flex
+          flex-direction: column
+          .xp-job-name
+            font-size: 20px
+            color: $white-80
+            a
+              text-decoration: none
+              margin: 2%
+              font-family: $secondary-font
+              color: $yellow
+          .xp-job-date
+            margin: 2%
+            font-family: $secondary-font
+            font-size: 14px
+            color: $white-50
+          .xp-job-tasks
+            margin: 2%
+            width: 100%
+            font-size: 16px
+            color: $white-60
+            .arrow-right-icon
+              font-size: 18px
+              color: $yellow
+              margin-right: 2%
+
+@media only screen and (min-width: 400px)
+  #experience
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .xp-data
+      width: 90%
+      height: 70vh
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      .xp-header
+        height: 5vh
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .xp-title
+          font-size: 16px
+          color: $white-60
+          span
+            font-family: $secondary-font
+            color: $yellow
+        .xp-divider
+          width: 50%
+          height: 0px
+          border: 1px solid $white-60
+      .xp-body
+        height: 60vh
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .xp-job-menu
+          height: 5vh
+          width: 90%
+          border-bottom: 2px solid $yellow
+          display: flex
+          overflow-x: auto;
+          overflow-y: hidden;
+          .xp-menu-opt
+            width: 100%
+            height: 5vh
+            border: none
+            font-family: $main-font
+            cursor: pointer
+            background-color: $dark
+            color: $white-80
+            font-size: 18px
+            outline: none
+          .active
+            background-color: $yellow-10 !important
+            color: $yellow !important
+            border: 1px solid $yellow !important
+        .xp-job-description
+          height: 40vh
+          width: 90%
           margin: 2%
-          width: 100%
+          padding: 2%
+          display: flex
+          flex-direction: column
+          .xp-job-name
+            font-size: 20px
+            color: $white-80
+            a
+              text-decoration: none
+              margin: 2%
+              font-family: $secondary-font
+              color: $yellow
+          .xp-job-date
+            margin: 2%
+            font-family: $secondary-font
+            font-size: 14px
+            color: $white-50
+          .xp-job-tasks
+            margin: 2%
+            width: 100%
+            font-size: 16px
+            color: $white-60
+            .arrow-right-icon
+              font-size: 18px
+              color: $yellow
+              margin-right: 2%
+
+@media only screen and (min-width: 500px)
+  #experience
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .xp-data
+      width: 90%
+      height: 70vh
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      .xp-header
+        height: 5vh
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .xp-title
           font-size: 18px
           color: $white-60
-          .arrow-right-icon
-            font-size: 18px
+          span
+            font-family: $secondary-font
             color: $yellow
-            margin-right: 2%
+        .xp-divider
+          width: 55%
+          height: 0px
+          border: 1px solid $white-60
+      .xp-body
+        height: 60vh
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .xp-job-menu
+          height: 5vh
+          width: 90%
+          border-bottom: 2px solid $yellow
+          display: flex
+          .xp-menu-opt
+            width: 100%
+            height: 5vh
+            border: none
+            font-family: $main-font
+            cursor: pointer
+            background-color: $dark
+            color: $white-80
+            font-size: 18px
+            outline: none
+          .active
+            background-color: $yellow-10 !important
+            color: $yellow !important
+            border: 1px solid $yellow !important
+        .xp-job-description
+          height: 40vh
+          width: 90%
+          margin: 2%
+          padding: 2%
+          display: flex
+          flex-direction: column
+          .xp-job-name
+            font-size: 20px
+            color: $white-80
+            a
+              text-decoration: none
+              margin: 2%
+              font-family: $secondary-font
+              color: $yellow
+          .xp-job-date
+            margin: 2%
+            font-family: $secondary-font
+            font-size: 14px
+            color: $white-50
+          .xp-job-tasks
+            margin: 2%
+            width: 100%
+            font-size: 16px
+            color: $white-60
+            .arrow-right-icon
+              font-size: 18px
+              color: $yellow
+              margin-right: 2%
+
+@media only screen and (min-width: 600px)
+  #experience
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .xp-data
+      width: 90%
+      height: 70vh
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      .xp-header
+        height: 5vh
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .xp-title
+          font-size: 18px
+          color: $white-60
+          span
+            font-family: $secondary-font
+            color: $yellow
+        .xp-divider
+          width: 65%
+          height: 0px
+          border: 1px solid $white-60
+      .xp-body
+        height: 60vh
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .xp-job-menu
+          height: 5vh
+          width: 90%
+          border-bottom: 2px solid $yellow
+          display: flex
+          .xp-menu-opt
+            width: 100%
+            height: 5vh
+            border: none
+            font-family: $main-font
+            cursor: pointer
+            background-color: $dark
+            color: $white-80
+            font-size: 18px
+            outline: none
+          .active
+            background-color: $yellow-10 !important
+            color: $yellow !important
+            border: 1px solid $yellow !important
+        .xp-job-description
+          height: 40vh
+          width: 90%
+          margin: 2%
+          padding: 2%
+          display: flex
+          flex-direction: column
+          .xp-job-name
+            font-size: 20px
+            color: $white-80
+            a
+              text-decoration: none
+              margin: 2%
+              font-family: $secondary-font
+              color: $yellow
+          .xp-job-date
+            margin: 2%
+            font-family: $secondary-font
+            font-size: 14px
+            color: $white-50
+          .xp-job-tasks
+            margin: 2%
+            width: 100%
+            font-size: 16px
+            color: $white-60
+            .arrow-right-icon
+              font-size: 18px
+              color: $yellow
+              margin-right: 2%
+
+@media only screen and (min-width: 768px)
+  #experience
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .xp-data
+      width: 90%
+      height: 70vh
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      .xp-header
+        height: 5vh
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .xp-title
+          font-size: 18px
+          color: $white-60
+          span
+            font-family: $secondary-font
+            color: $yellow
+        .xp-divider
+          width: 70%
+          height: 0px
+          border: 1px solid $white-60
+      .xp-body
+        height: 60vh
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .xp-job-menu
+          height: 5vh
+          width: 90%
+          border-bottom: 2px solid $yellow
+          display: flex
+          .xp-menu-opt
+            width: 100%
+            height: 5vh
+            border: none
+            font-family: $main-font
+            cursor: pointer
+            background-color: $dark
+            color: $white-80
+            font-size: 18px
+            outline: none
+          .active
+            background-color: $yellow-10 !important
+            color: $yellow !important
+            border: 1px solid $yellow !important
+        .xp-job-description
+          height: 40vh
+          width: 90%
+          margin: 2%
+          padding: 2%
+          display: flex
+          flex-direction: column
+          .xp-job-name
+            font-size: 24px
+            color: $white-80
+            a
+              text-decoration: none
+              margin: 2%
+              font-family: $secondary-font
+              color: $yellow
+          .xp-job-date
+            margin: 2%
+            font-family: $secondary-font
+            font-size: 14px
+            color: $white-50
+          .xp-job-tasks
+            margin: 2%
+            width: 100%
+            font-size: 18px
+            color: $white-60
+            .arrow-right-icon
+              font-size: 18px
+              color: $yellow
+              margin-right: 2%
+
+@media only screen and (min-width: 992px)
+  #experience
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .xp-data
+      width: 90%
+      height: 70vh
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      .xp-header
+        height: 5vh
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .xp-title
+          font-size: 18px
+          color: $white-60
+          span
+            font-family: $secondary-font
+            color: $yellow
+        .xp-divider
+          width: 80%
+          height: 0px
+          border: 1px solid $white-60
+      .xp-body
+        height: 60vh
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .xp-job-menu
+          height: 8vh
+          width: 90%
+          border-bottom: 2px solid $yellow
+          display: flex
+          .xp-menu-opt
+            width: 100%
+            height: 5vh
+            border: none
+            font-family: $main-font
+            cursor: pointer
+            background-color: $dark
+            color: $white-80
+            font-size: 18px
+            outline: none
+          .active
+            background-color: $yellow-10 !important
+            color: $yellow !important
+            border: 1px solid $yellow !important
+        .xp-job-description
+          height: 40vh
+          width: 90%
+          margin: 2%
+          padding: 2%
+          display: flex
+          flex-direction: column
+          .xp-job-name
+            font-size: 24px
+            color: $white-80
+            a
+              text-decoration: none
+              margin: 2%
+              font-family: $secondary-font
+              color: $yellow
+          .xp-job-date
+            margin: 2%
+            font-family: $secondary-font
+            font-size: 14px
+            color: $white-50
+          .xp-job-tasks
+            margin: 2%
+            width: 100%
+            font-size: 18px
+            color: $white-60
+            .arrow-right-icon
+              font-size: 18px
+              color: $yellow
+              margin-right: 2%
+
+@media only screen and (min-width: 1200px)
+  #experience
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .xp-data
+      width: 60%
+      height: 70vh
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      .xp-header
+        height: 5vh
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .xp-title
+          font-size: 20px
+          color: $white-60
+          span
+            font-family: $secondary-font
+            color: $yellow
+        .xp-divider
+          width: 70%
+          height: 0px
+          border: 1px solid $white-60
+      .xp-body
+        height: 60vh
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .xp-job-menu
+          height: 40vh
+          width: 90%
+          border-bottom: 2px solid $yellow
+          display: flex
+          .xp-menu-opt
+            width: 100%
+            height: 5vh
+            border: none
+            font-family: $main-font
+            cursor: pointer
+            background-color: $dark
+            color: $white-80
+            font-size: 18px
+            outline: none
+          .active
+            background-color: $yellow-10 !important
+            color: $yellow !important
+            border: 1px solid $yellow !important
+        .xp-job-description
+          height: 40vh
+          width: 90%
+          margin: 2%
+          padding: 2%
+          display: flex
+          flex-direction: column
+          .xp-job-name
+            font-size: 24px
+            color: $white-80
+            a
+              text-decoration: none
+              margin: 2%
+              font-family: $secondary-font
+              color: $yellow
+          .xp-job-date
+            margin: 2%
+            font-family: $secondary-font
+            font-size: 14px
+            color: $white-50
+          .xp-job-tasks
+            margin: 2%
+            width: 100%
+            font-size: 18px
+            color: $white-60
+            .arrow-right-icon
+              font-size: 18px
+              color: $yellow
+              margin-right: 2%
+
+@media only screen and (min-width: 1600px)
+  #experience
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .xp-data
+      width: 60%
+      height: 70vh
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      .xp-header
+        height: 5vh
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .xp-title
+          font-size: 20px
+          color: $white-60
+          span
+            font-family: $secondary-font
+            color: $yellow
+        .xp-divider
+          width: 82%
+          height: 0px
+          border: 1px solid $white-60
+      .xp-body
+        height: 60vh
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        .xp-job-menu
+          height: 40vh
+          width: 10%
+          border-left: 2px solid $yellow
+          display: flex
+          flex-direction: column
+          .xp-menu-opt
+            width: 100%
+            height: 5vh
+            border: none
+            font-family: $main-font
+            cursor: pointer
+            background-color: $dark
+            color: $white-80
+            font-size: 18px
+            outline: none
+          .active
+            background-color: $yellow-10 !important
+            color: $yellow !important
+            border: 1px solid $yellow !important
+        .xp-job-description
+          height: 40vh
+          width: 50%
+          margin: 2%
+          padding: 2%
+          display: flex
+          flex-direction: column
+          .xp-job-name
+            font-size: 24px
+            color: $white-80
+            a
+              text-decoration: none
+              margin: 2%
+              font-family: $secondary-font
+              color: $yellow
+          .xp-job-date
+            margin: 2%
+            font-family: $secondary-font
+            font-size: 14px
+            color: $white-50
+          .xp-job-tasks
+            margin: 2%
+            width: 100%
+            font-size: 18px
+            color: $white-60
+            .arrow-right-icon
+              font-size: 18px
+              color: $yellow
+              margin-right: 2%
 
 /* Featured Projects */
 
