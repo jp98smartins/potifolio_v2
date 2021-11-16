@@ -478,7 +478,14 @@ header {
 
 @media only screen and (min-width: 1200px) {
   .social-media {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .social-media {
     position: fixed;
+    display: block;
     bottom: 0px;
     right: 150px;
   }
@@ -3096,312 +3103,330 @@ header {
 }
 
 /* Featured Projects */
-.ft-proj-data-left {
-  height: 35vh;
-  width: 90%;
-  margin: 5vh 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media only screen and (min-width: 300px) {
+  .ft-proj-data-left {
+    display: none;
+  }
 }
 
-.ft-proj-data-left .ft-proj-desc {
-  height: 100%;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+@media only screen and (min-width: 992px) {
+  .ft-proj-data-left {
+    display: block;
+    height: 35vh;
+    width: 90%;
+    margin: 5vh 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-proj-data-left .ft-proj-desc {
+    height: 100%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .ft-proj-data-left .ft-proj-desc .ft-proj-featured {
+    font-size: 12px;
+    font-family: "Roboto Mono";
+    color: #ffce00;
+  }
+  .ft-proj-data-left .ft-proj-desc .ft-proj-title {
+    margin-left: 5%;
+    font-size: 24px;
+    color: #fff;
+  }
+  .ft-proj-data-left .ft-proj-desc .ft-proj-description {
+    background-color: #2A3B44;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }
 
-.ft-proj-data-left .ft-proj-desc .ft-proj-featured {
-  font-size: 12px;
-  font-family: "Roboto Mono";
-  color: #ffce00;
+@media only screen and (min-width: 992px) and (min-width: 1200px) {
+  .ft-proj-data-left .ft-proj-desc .ft-proj-description {
+    height: 20vh;
+  }
 }
 
-.ft-proj-data-left .ft-proj-desc .ft-proj-title {
-  margin-left: 5%;
-  font-size: 24px;
-  color: #fff;
+@media only screen and (min-width: 992px) and (min-width: 1600px) {
+  .ft-proj-data-left .ft-proj-desc .ft-proj-description {
+    height: 16vh;
+  }
 }
 
-.ft-proj-data-left .ft-proj-desc .ft-proj-description {
-  background-color: #2A3B44;
-  height: 16vh;
-  width: 100%;
+@media only screen and (min-width: 992px) {
+  .ft-proj-data-left .ft-proj-desc .ft-proj-description p {
+    margin: 20px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .ft-proj-data-left .ft-proj-img {
+    height: 100%;
+    width: 60%;
+    margin: 0 2%;
+    cursor: pointer;
+    background-color: rgba(255, 206, 0, 0.1);
+    position: relative;
+    z-index: 0;
+  }
+  .ft-proj-data-left .ft-proj-img .ft-proj-image-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 206, 0, 0.1);
+    position: absolute;
+    z-index: 2;
+  }
+  .ft-proj-data-left .ft-proj-img .ft-proj-image-overlay:hover {
+    background-color: transparent;
+  }
+  .ft-proj-data-left .ft-proj-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    z-index: 1;
+  }
+  .ft-proj-data-left .ft-proj-tech {
+    height: 100%;
+    width: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .ft-proj-data-left .ft-proj-tech .ft-proj-used-tech {
+    width: 100%;
+    height: 70%;
+  }
+  .ft-proj-data-left .ft-proj-tech .ft-proj-used-tech p {
+    margin-left: 5px;
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ft-proj-data-left .ft-proj-tech .ft-proj-links {
+    width: 100%;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-proj-data-left .ft-proj-tech .ft-proj-links div {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-proj-data-left .ft-proj-tech .ft-proj-links div .link-icon, .ft-proj-data-left .ft-proj-tech .ft-proj-links div .git-icon {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ft-proj-data-left .ft-proj-tech .ft-proj-links div .link-icon:hover, .ft-proj-data-left .ft-proj-tech .ft-proj-links div .git-icon:hover {
+    color: #ffce00;
+  }
 }
 
-.ft-proj-data-left .ft-proj-desc .ft-proj-description p {
-  margin: 20px;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
+@media only screen and (min-width: 300px) {
+  .ft-proj-data-right {
+    display: none;
+  }
 }
 
-.ft-proj-data-left .ft-proj-img {
-  height: 100%;
-  width: 60%;
-  margin: 0 2%;
-  cursor: pointer;
-  background-color: rgba(255, 206, 0, 0.1);
-  position: relative;
-  z-index: 0;
+@media only screen and (min-width: 992px) {
+  .ft-proj-data-right {
+    display: block;
+    height: 35vh;
+    width: 90%;
+    margin: 5vh 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-proj-data-right .ft-proj-tech {
+    height: 100%;
+    width: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .ft-proj-data-right .ft-proj-tech .ft-proj-used-tech {
+    width: 100%;
+    height: 70%;
+  }
+  .ft-proj-data-right .ft-proj-tech .ft-proj-used-tech p {
+    margin-left: 5px;
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ft-proj-data-right .ft-proj-tech .ft-proj-links {
+    width: 100%;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-proj-data-right .ft-proj-tech .ft-proj-links div {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-proj-data-right .ft-proj-tech .ft-proj-links div .link-icon, .ft-proj-data-right .ft-proj-tech .ft-proj-links div .git-icon {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ft-proj-data-right .ft-proj-tech .ft-proj-links div .link-icon:hover, .ft-proj-data-right .ft-proj-tech .ft-proj-links div .git-icon:hover {
+    color: #ffce00;
+  }
+  .ft-proj-data-right .ft-proj-img {
+    height: 100%;
+    width: 60%;
+    margin: 0 2%;
+    cursor: pointer;
+    background-color: rgba(255, 206, 0, 0.1);
+    position: relative;
+    z-index: 0;
+  }
+  .ft-proj-data-right .ft-proj-img .ft-proj-image-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 206, 0, 0.1);
+    position: absolute;
+    z-index: 2;
+  }
+  .ft-proj-data-right .ft-proj-img .ft-proj-image-overlay:hover {
+    background-color: transparent;
+  }
+  .ft-proj-data-right .ft-proj-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    z-index: 1;
+  }
+  .ft-proj-data-right .ft-proj-desc {
+    height: 100%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .ft-proj-data-right .ft-proj-desc .ft-proj-featured {
+    font-size: 12px;
+    font-family: "Roboto Mono";
+    color: #ffce00;
+  }
+  .ft-proj-data-right .ft-proj-desc .ft-proj-title {
+    margin-right: 5%;
+    font-size: 24px;
+    color: #fff;
+  }
+  .ft-proj-data-right .ft-proj-desc .ft-proj-description {
+    background-color: #2A3B44;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }
 
-.ft-proj-data-left .ft-proj-img .ft-proj-image-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 206, 0, 0.1);
-  position: absolute;
-  z-index: 2;
+@media only screen and (min-width: 992px) and (min-width: 1200px) {
+  .ft-proj-data-right .ft-proj-desc .ft-proj-description {
+    height: 20vh;
+  }
 }
 
-.ft-proj-data-left .ft-proj-img .ft-proj-image-overlay:hover {
-  background-color: transparent;
+@media only screen and (min-width: 992px) and (min-width: 1600px) {
+  .ft-proj-data-right .ft-proj-desc .ft-proj-description {
+    height: 16vh;
+  }
 }
 
-.ft-proj-data-left .ft-proj-img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  z-index: 1;
-}
-
-.ft-proj-data-left .ft-proj-tech {
-  height: 100%;
-  width: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.ft-proj-data-left .ft-proj-tech .ft-proj-used-tech {
-  width: 100%;
-  height: 70%;
-}
-
-.ft-proj-data-left .ft-proj-tech .ft-proj-used-tech p {
-  margin-left: 5px;
-  font-family: "Roboto Mono";
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.ft-proj-data-left .ft-proj-tech .ft-proj-links {
-  width: 100%;
-  height: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ft-proj-data-left .ft-proj-tech .ft-proj-links div {
-  width: 50%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ft-proj-data-left .ft-proj-tech .ft-proj-links div .link-icon, .ft-proj-data-left .ft-proj-tech .ft-proj-links div .git-icon {
-  font-size: 25px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.ft-proj-data-left .ft-proj-tech .ft-proj-links div .link-icon:hover, .ft-proj-data-left .ft-proj-tech .ft-proj-links div .git-icon:hover {
-  color: #ffce00;
-}
-
-.ft-proj-data-right {
-  height: 35vh;
-  width: 90%;
-  margin: 5vh 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ft-proj-data-right .ft-proj-tech {
-  height: 100%;
-  width: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.ft-proj-data-right .ft-proj-tech .ft-proj-used-tech {
-  width: 100%;
-  height: 70%;
-}
-
-.ft-proj-data-right .ft-proj-tech .ft-proj-used-tech p {
-  margin-left: 5px;
-  font-family: "Roboto Mono";
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.ft-proj-data-right .ft-proj-tech .ft-proj-links {
-  width: 100%;
-  height: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ft-proj-data-right .ft-proj-tech .ft-proj-links div {
-  width: 50%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ft-proj-data-right .ft-proj-tech .ft-proj-links div .link-icon, .ft-proj-data-right .ft-proj-tech .ft-proj-links div .git-icon {
-  font-size: 25px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.ft-proj-data-right .ft-proj-tech .ft-proj-links div .link-icon:hover, .ft-proj-data-right .ft-proj-tech .ft-proj-links div .git-icon:hover {
-  color: #ffce00;
-}
-
-.ft-proj-data-right .ft-proj-img {
-  height: 100%;
-  width: 60%;
-  margin: 0 2%;
-  cursor: pointer;
-  background-color: rgba(255, 206, 0, 0.1);
-  position: relative;
-  z-index: 0;
-}
-
-.ft-proj-data-right .ft-proj-img .ft-proj-image-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 206, 0, 0.1);
-  position: absolute;
-  z-index: 2;
-}
-
-.ft-proj-data-right .ft-proj-img .ft-proj-image-overlay:hover {
-  background-color: transparent;
-}
-
-.ft-proj-data-right .ft-proj-img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  z-index: 1;
-}
-
-.ft-proj-data-right .ft-proj-desc {
-  height: 100%;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.ft-proj-data-right .ft-proj-desc .ft-proj-featured {
-  font-size: 12px;
-  font-family: "Roboto Mono";
-  color: #ffce00;
-}
-
-.ft-proj-data-right .ft-proj-desc .ft-proj-title {
-  margin-right: 5%;
-  font-size: 24px;
-  color: #fff;
-}
-
-.ft-proj-data-right .ft-proj-desc .ft-proj-description {
-  background-color: #2A3B44;
-  height: 16vh;
-  width: 100%;
-}
-
-.ft-proj-data-right .ft-proj-desc .ft-proj-description p {
-  margin: 20px;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
+@media only screen and (min-width: 992px) {
+  .ft-proj-data-right .ft-proj-desc .ft-proj-description p {
+    margin: 20px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 /* Projects Page */
@@ -3421,7 +3446,6 @@ header {
 }
 
 #projects .proj-data {
-  width: 60%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3435,6 +3459,30 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 300px) {
+  #projects .proj-data {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #projects .proj-data {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #projects .proj-data {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #projects .proj-data {
+    width: 60%;
+  }
 }
 
 #projects .proj-data .proj-header {
@@ -3470,8 +3518,19 @@ header {
 }
 
 #projects .proj-data .proj-header .proj-inner-header .proj-title {
-  font-size: 20px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (min-width: 300px) {
+  #projects .proj-data .proj-header .proj-inner-header .proj-title {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #projects .proj-data .proj-header .proj-inner-header .proj-title {
+    font-size: 20px;
+  }
 }
 
 #projects .proj-data .proj-header .proj-inner-header .proj-title span {
@@ -3480,9 +3539,44 @@ header {
 }
 
 #projects .proj-data .proj-header .proj-inner-header .proj-divider {
-  width: 80%;
   height: 0px;
   border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (min-width: 300px) {
+  #projects .proj-data .proj-header .proj-inner-header .proj-divider {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  #projects .proj-data .proj-header .proj-inner-header .proj-divider {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #projects .proj-data .proj-header .proj-inner-header .proj-divider {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #projects .proj-data .proj-header .proj-inner-header .proj-divider {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #projects .proj-data .proj-header .proj-inner-header .proj-divider {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #projects .proj-data .proj-header .proj-inner-header .proj-divider {
+    width: 75%;
+  }
 }
 
 #projects .proj-data .proj-header .proj-see-all {
@@ -3517,16 +3611,12 @@ header {
 }
 
 #projects .proj-data a {
-  font-size: 16px;
   font-family: "Roboto Mono";
   color: #ffce00;
   text-decoration: none;
 }
 
 #projects .proj-data a .proj-call-to-action {
-  width: 130px;
-  height: 50px;
-  padding: 5px 10px;
   border: 2px solid #ffce00;
   border-radius: 5px;
   display: -webkit-box;
@@ -3538,6 +3628,33 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 300px) {
+  #projects .proj-data a .proj-call-to-action {
+    font-size: 12px;
+    width: 90px;
+    height: 40px;
+    padding: 5px 5px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #projects .proj-data a .proj-call-to-action {
+    font-size: 14px;
+    width: 110px;
+    height: 45px;
+    padding: 5px 5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #projects .proj-data a .proj-call-to-action {
+    font-size: 16px;
+    width: 130px;
+    height: 50px;
+    padding: 5px 10px;
+  }
 }
 
 #projects .proj-data a .proj-call-to-action:hover {

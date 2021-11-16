@@ -292,7 +292,12 @@ header
 
 @media only screen and (min-width: 1200px)
   .social-media
+    display: none
+
+@media only screen and (min-width: 1200px)
+  .social-media
     position: fixed
+    display: block
     bottom: 0px
     right: 150px
     div
@@ -1856,175 +1861,197 @@ header
 
 /* Featured Projects */
 
-.ft-proj-data-left
-  height: 35vh
-  width: 90%
-  margin: 5vh 0px
-  display: flex
-  justify-content: space-between
-  align-items: center
-  .ft-proj-desc
-    height: 100%
-    width: 50%
-    display: flex
-    flex-direction: column
-    justify-content: space-around
-    align-items: flex-start
-    .ft-proj-featured
-      font-size: 12px
-      font-family: $secondary-font
-      color: $yellow
-    .ft-proj-title
-      margin-left: 5%
-      font-size: 24px
-      color: $white
-    .ft-proj-description
-      background-color: $light-dark
-      height: 16vh
-      width: 100%
-      p
-        margin: 20px
-        font-size: 16px
-        color: $white-60
-  .ft-proj-img
-    height: 100%
-    width: 60%
-    margin: 0 2%
-    cursor: pointer
-    background-color: $yellow-10
-    position: relative
-    z-index: 0
-    .ft-proj-image-overlay
-      width: 100%
-      height: 100%
-      background-color: $yellow-10
-      position: absolute
-      z-index: 2
-      &:hover
-        background-color: transparent
-    img
-      width: 100%
-      height: 100%
-      object-fit: cover
-      position: absolute
-      z-index: 1
-  .ft-proj-tech
-    height: 100%
-    width: 10%
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    align-items: flex-start
-    .ft-proj-used-tech
-      width: 100%
-      height: 70%
-      p
-        margin-left: 5px
-        font-family: $secondary-font
-        font-size: 14px
-        color: $white-50
-    .ft-proj-links
-      width: 100%
-      height: 30%
-      display: flex
-      justify-content: flex-start
-      align-items: center
-      div
-        width: 50%
-        height: 100%
-        display: flex
-        justify-content: center
-        align-items: center
-        .link-icon, .git-icon
-          font-size: 25px
-          color: $white-50
-          &:hover
-            color: $yellow
+@media only screen and (min-width: 300px)
+  .ft-proj-data-left
+    display: none
 
-.ft-proj-data-right
-  height: 35vh
-  width: 90%
-  margin: 5vh 0px
-  display: flex
-  justify-content: space-between
-  align-items: center
-  .ft-proj-tech
-    height: 100%
-    width: 10%
+@media only screen and (min-width: 992px)
+  .ft-proj-data-left
+    display: block
+    height: 35vh
+    width: 90%
+    margin: 5vh 0px
     display: flex
-    flex-direction: column
     justify-content: space-between
-    align-items: flex-start
-    .ft-proj-used-tech
-      width: 100%
-      height: 70%
-      p
-        margin-left: 5px
-        font-family: $secondary-font
-        font-size: 14px
-        color: $white-50
-    .ft-proj-links
-      width: 100%
-      height: 30%
+    align-items: center
+    .ft-proj-desc
+      height: 100%
+      width: 50%
       display: flex
-      justify-content: flex-start
-      align-items: center
-      div
-        width: 50%
-        height: 100%
-        display: flex
-        justify-content: center
-        align-items: center
-        .link-icon, .git-icon
-          font-size: 25px
-          color: $white-50
-          &:hover
-            color: $yellow
-  .ft-proj-img
-    height: 100%
-    width: 60%
-    margin: 0 2%
-    cursor: pointer
-    background-color: $yellow-10
-    position: relative
-    z-index: 0
-    .ft-proj-image-overlay
-      width: 100%
+      flex-direction: column
+      justify-content: space-around
+      align-items: flex-start
+      .ft-proj-featured
+        font-size: 12px
+        font-family: $secondary-font
+        color: $yellow
+      .ft-proj-title
+        margin-left: 5%
+        font-size: 24px
+        color: $white
+      .ft-proj-description
+        @media only screen and (min-width: 1200px)
+          height: 20vh
+        @media only screen and (min-width: 1600px)
+          height: 16vh
+        background-color: $light-dark
+        width: 100%
+        overflow-x: hidden
+        overflow-y: auto
+        p
+          margin: 20px
+          font-size: 16px
+          color: $white-60
+    .ft-proj-img
       height: 100%
+      width: 60%
+      margin: 0 2%
+      cursor: pointer
       background-color: $yellow-10
-      position: absolute
-      z-index: 2
-      &:hover
-        background-color: transparent
-    img
-      width: 100%
+      position: relative
+      z-index: 0
+      .ft-proj-image-overlay
+        width: 100%
+        height: 100%
+        background-color: $yellow-10
+        position: absolute
+        z-index: 2
+        &:hover
+          background-color: transparent
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        position: absolute
+        z-index: 1
+    .ft-proj-tech
       height: 100%
-      object-fit: cover
-      position: absolute
-      z-index: 1
-  .ft-proj-desc
-    height: 100%
-    width: 50%
+      width: 10%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      .ft-proj-used-tech
+        width: 100%
+        height: 70%
+        p
+          margin-left: 5px
+          font-family: $secondary-font
+          font-size: 14px
+          color: $white-50
+      .ft-proj-links
+        width: 100%
+        height: 30%
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        div
+          width: 50%
+          height: 100%
+          display: flex
+          justify-content: center
+          align-items: center
+          .link-icon, .git-icon
+            font-size: 25px
+            color: $white-50
+            &:hover
+              color: $yellow
+
+@media only screen and (min-width: 300px)
+  .ft-proj-data-right
+    display: none
+
+@media only screen and (min-width: 992px)
+  .ft-proj-data-right
+    display: block
+    height: 35vh
+    width: 90%
+    margin: 5vh 0px
     display: flex
-    flex-direction: column
-    justify-content: space-around
-    align-items: flex-end
-    .ft-proj-featured
-      font-size: 12px
-      font-family: $secondary-font
-      color: $yellow
-    .ft-proj-title
-      margin-right: 5%
-      font-size: 24px
-      color: $white
-    .ft-proj-description
-      background-color: $light-dark
-      height: 16vh
-      width: 100%
-      p
-        margin: 20px
-        font-size: 16px
-        color: $white-60
+    justify-content: space-between
+    align-items: center
+    .ft-proj-tech
+      height: 100%
+      width: 10%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      .ft-proj-used-tech
+        width: 100%
+        height: 70%
+        p
+          margin-left: 5px
+          font-family: $secondary-font
+          font-size: 14px
+          color: $white-50
+      .ft-proj-links
+        width: 100%
+        height: 30%
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        div
+          width: 50%
+          height: 100%
+          display: flex
+          justify-content: center
+          align-items: center
+          .link-icon, .git-icon
+            font-size: 25px
+            color: $white-50
+            &:hover
+              color: $yellow
+    .ft-proj-img
+      height: 100%
+      width: 60%
+      margin: 0 2%
+      cursor: pointer
+      background-color: $yellow-10
+      position: relative
+      z-index: 0
+      .ft-proj-image-overlay
+        width: 100%
+        height: 100%
+        background-color: $yellow-10
+        position: absolute
+        z-index: 2
+        &:hover
+          background-color: transparent
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        position: absolute
+        z-index: 1
+    .ft-proj-desc
+      height: 100%
+      width: 50%
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: flex-end
+      .ft-proj-featured
+        font-size: 12px
+        font-family: $secondary-font
+        color: $yellow
+      .ft-proj-title
+        margin-right: 5%
+        font-size: 24px
+        color: $white
+      .ft-proj-description
+        @media only screen and (min-width: 1200px)
+          height: 20vh
+        @media only screen and (min-width: 1600px)
+          height: 16vh
+        background-color: $light-dark
+        width: 100%
+        overflow-x: hidden
+        overflow-y: auto
+        p
+          margin: 20px
+          font-size: 16px
+          color: $white-60
 
 /* Projects Page */
   
@@ -2036,7 +2063,14 @@ header
   justify-content: center
   align-items: center
   .proj-data
-    width: 60%
+    @media only screen and (min-width: 300px)
+      width: 90%
+    @media only screen and (min-width: 992px)
+      width: 80%
+    @media only screen and (min-width: 1200px)
+      width: 70%
+    @media only screen and (min-width: 1600px)
+      width: 60%
     height: 100%
     display: flex
     flex-direction: column
@@ -2056,13 +2090,27 @@ header
         justify-content: space-between
         align-items: center
         .proj-title
-          font-size: 20px
+          @media only screen and (min-width: 300px)
+            font-size: 18px
+          @media only screen and (min-width: 768px)
+            font-size: 20px
           color: $white-60
           span
             font-family: $secondary-font
             color: $yellow
         .proj-divider
-          width: 80%
+          @media only screen and (min-width: 300px)
+            width: 25%
+          @media only screen and (min-width: 400px)
+            width: 45%
+          @media only screen and (min-width: 500px)
+            width: 55%
+          @media only screen and (min-width: 600px)
+            width: 65%
+          @media only screen and (min-width: 768px)
+            width: 70%
+          @media only screen and (min-width: 1600px)
+            width: 75%
           height: 0px
           border: 1px solid $white-60
       .proj-see-all
@@ -2082,14 +2130,25 @@ header
           .arrow-right-icon
             font-size: 20px
     a
-      font-size: 16px
       font-family: $secondary-font
       color: $yellow
       text-decoration: none
       .proj-call-to-action
-        width: 130px
-        height: 50px
-        padding: 5px 10px
+        @media only screen and (min-width: 300px)
+          font-size: 12px
+          width: 90px
+          height: 40px
+          padding: 5px 5px
+        @media only screen and (min-width: 600px)
+          font-size: 14px
+          width: 110px
+          height: 45px
+          padding: 5px 5px
+        @media only screen and (min-width: 1200px)
+          font-size: 16px
+          width: 130px
+          height: 50px
+          padding: 5px 10px
         border: 2px solid $yellow
         border-radius: 5px
         display: flex
