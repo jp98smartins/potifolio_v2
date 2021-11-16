@@ -7,7 +7,7 @@ import {
 const primeupTrainee = {
   name: "PrimeUp",
   site: "http://www.primeup.com.br/",
-  position: "Trainee",
+  position: "Trainee ",
   date: "Jul - Presente",
   description: [
     "Encarregado de desenvolver testes automatizados de uma solução da Anbima.",
@@ -19,7 +19,7 @@ const primeupTrainee = {
 const primeupEstagio = {
   name: "PrimeUp",
   site: "http://www.primeup.com.br/",
-  position: "Estagiário",
+  position: "Estagiário ",
   date: "Nov/2020 - Jun/2021",
   description: [
     "Encarregado de desenvolver testes automatizados de uma solução da Anbima.",
@@ -31,7 +31,7 @@ const primeupEstagio = {
 const addLabs = {
   name: "AddLabs",
   site: "https://www.addlabs.uff.br/Novo_Site_ADDLabs/",
-  position: "Desenvolvedor Mobile Jr.",
+  position: "Desenvolvedor Mobile Jr. ",
   date: "Mar - Ago/2021",
   description: [
     "Encarregado de desenvolver aplicativo em Flutter para ser o backoffice de um app já existente.",
@@ -44,7 +44,7 @@ const addLabs = {
 const duo3 = {
   name: "Duo3",
   site: "http://sigoerp.com.br/",
-  position: "Desenvolvedor Mobile Jr.",
+  position: "Desenvolvedor Mobile Jr. ",
   date: "Fev - Nov/2020",
   description: [
     "Encarregado da criação de um aplicativo mobile muiltiplataforma (Android e IOS) para controle de diários de obra.",
@@ -56,7 +56,7 @@ const duo3 = {
 const uff = {
   name: "UFF",
   site: "http://www.uff.br/",
-  position: "Estagiário",
+  position: "Estagiário ",
   date: "Out - Fev/2019",
   description: [
     "Projeto de extensão resultante de parceria entre a UFF e a Engie.",

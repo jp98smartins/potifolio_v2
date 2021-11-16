@@ -76,6 +76,7 @@ header
     .menu
       .menu-icon
         font-size: 35px
+        margin-right: 20px
         color: $white
 
 @media only screen and (min-width: 300px)
@@ -1193,6 +1194,7 @@ header
         .xp-job-menu
           height: 5vh
           width: 90%
+          border-right: 0px solid $yellow
           border-bottom: 2px solid $yellow
           display: flex
           overflow-x: auto;
@@ -1281,6 +1283,7 @@ header
         .xp-job-menu
           height: 5vh
           width: 90%
+          border-right: 0px solid $yellow
           border-bottom: 2px solid $yellow
           display: flex
           overflow-x: auto;
@@ -1369,6 +1372,7 @@ header
         .xp-job-menu
           height: 5vh
           width: 90%
+          border-right: 0px solid $yellow
           border-bottom: 2px solid $yellow
           display: flex
           .xp-menu-opt
@@ -1455,6 +1459,7 @@ header
         .xp-job-menu
           height: 5vh
           width: 90%
+          border-right: 0px solid $yellow
           border-bottom: 2px solid $yellow
           display: flex
           .xp-menu-opt
@@ -1541,6 +1546,7 @@ header
         .xp-job-menu
           height: 5vh
           width: 90%
+          border-right: 0px solid $yellow
           border-bottom: 2px solid $yellow
           display: flex
           .xp-menu-opt
@@ -1625,8 +1631,9 @@ header
         justify-content: center
         align-items: center
         .xp-job-menu
-          height: 8vh
+          height: 5vh
           width: 90%
+          border-right: 0px solid $yellow
           border-bottom: 2px solid $yellow
           display: flex
           .xp-menu-opt
@@ -1711,8 +1718,9 @@ header
         justify-content: center
         align-items: center
         .xp-job-menu
-          height: 40vh
+          height: 5vh
           width: 90%
+          border-right: 0px solid $yellow
           border-bottom: 2px solid $yellow
           display: flex
           .xp-menu-opt
@@ -1793,12 +1801,14 @@ header
         height: 60vh
         width: 100%
         display: flex
+        flex-direction: row
         justify-content: center
         align-items: center
         .xp-job-menu
           height: 40vh
           width: 10%
-          border-left: 2px solid $yellow
+          border-right: 2px solid $yellow
+          border-bottom: 0px solid $yellow
           display: flex
           flex-direction: column
           .xp-menu-opt
@@ -2094,61 +2104,105 @@ header
 .all-proj-data
   margin-top: 15vh
   width: 100%
-  height: 75vh
+  @media only screen and (min-width: 300px)
+    height: 65vh
+  @media only screen and (min-width: 1200px)
+    height: 75vh
   display: flex
   flex-direction: column
   justify-content: space-around
   align-items: center
   .all-proj-header
+    @media only screen and (min-width: 300px)
+      width: 90%
+    @media only screen and (min-width: 992px)
+      width: 80%
+    @media only screen and (min-width: 1200px)
+      width: 70%
+    @media only screen and (min-width: 1600px)
+      width: 60%
     height: 5vh
-    width: 60%
     display: flex
     justify-content: space-between
     align-items: center
     .all-proj-title
-      font-size: 20px
+      @media only screen and (min-width: 300px)
+        font-size: 18px
+      @media only screen and (min-width: 768px)
+        font-size: 20px
       color: $white-60
       span
         font-family: $secondary-font
         color: $yellow
     .all-proj-divider
-      width: 77%
       height: 0px
       border: 1px solid $white-60
+      @media only screen and (min-width: 300px)
+        width: 20%
+      @media only screen and (min-width: 400px)
+        width: 40%
+      @media only screen and (min-width: 500px)
+        width: 45%
+      @media only screen and (min-width: 600px)
+        width: 55%
+      @media only screen and (min-width: 768px)
+        width: 60%
+      @media only screen and (min-width: 992px)
+        width: 65%
+      @media only screen and (min-width: 1200px)
+        width: 70%
+      @media only screen and (min-width: 1600px)
+        width: 75%
   .table
-    width: 60%
+    @media only screen and (min-width: 300px)
+      width: 90%
+    @media only screen and (min-width: 992px)
+      width: 80%
+    @media only screen and (min-width: 1200px)
+      width: 70%
+    @media only screen and (min-width: 1600px)
+      width: 60%
     height: 40vh
     display: flex
     flex-direction: column
     justify-content: flex-start
     align-items: center
     .thead
-      height: 5vh
+      height: 10vh
       width: 100%
       display: flex
       justify-content: center
       align-items: center
       border-bottom: 2px solid $yellow
       .name-column-header
-        width: 50%
-        height: 4vh
-        font-size: 20px
+        @media only screen and (min-width: 300px)
+          font-size: 16px
+        @media only screen and (min-width: 768px)
+          font-size: 18px
+        width: 35%
+        height: 10vh
         color: $yellow
         display: flex
         justify-content: center
         align-items: center
       .tech-column-header
-        width: 35%
-        height: 4vh
-        font-size: 20px
+        @media only screen and (min-width: 300px)
+          font-size: 16px
+        @media only screen and (min-width: 768px)
+          font-size: 18px
+        width: 45%
+        height: 10vh
         color: $yellow
         display: flex
         justify-content: center
         align-items: center
       .link-column-header
-        width: 15%
-        height: 4vh
-        font-size: 20px
+        @media only screen and (min-width: 300px)
+          font-size: 16px
+        @media only screen and (min-width: 768px)
+          font-size: 18px
+        width: 20%
+        height: 10vh
         color: $yellow
         display: flex
         justify-content: center
@@ -2160,18 +2214,23 @@ header
       flex-direction: column
       justify-content: flex-start
       align-items: center
+      overflow-x: hidden;
+      overflow-y: auto;
       .projects-row
         width: 100%
-        height: 5vh
+        height: 8vh
         display: flex
         justify-content: center
         align-items: center
         &:hover
           background-color: $light-dark
         .name-column-data
-          width: 50%
-          height: 4vh
-          font-size: 16px
+          width: 35%
+          @media only screen and (min-width: 300px)
+            font-size: 14px
+          @media only screen and (min-width: 600px)
+            font-size: 16px
+          height: 8vh
           color: $white-60
           display: flex
           justify-content: flex-start
@@ -2179,16 +2238,19 @@ header
           span
             margin-left: 5%
         .tech-column-data
-          width: 35%
-          height: 4vh
-          font-size: 16px
+          width: 45%
+          @media only screen and (min-width: 300px)
+            font-size: 14px
+          @media only screen and (min-width: 600px)
+            font-size: 16px
+          height: 8vh
           color: $white-60
           display: flex
           justify-content: center
           align-items: center
         .link-column-data
-          width: 15%
-          height: 4vh
+          width: 20%
+          height: 10vh
           color: $white-60
           display: flex
           justify-content: space-around
@@ -2198,16 +2260,30 @@ header
             &:hover
               color: $yellow
             .link-icon
-              font-size: 25px
+              @media only screen and (min-width: 300px)
+                font-size: 20px
+              @media only screen and (min-width: 600px)
+                font-size: 25px
   a
-    font-size: 16px
     font-family: $secondary-font
     color: $yellow
     text-decoration: none
     .all-proj-back-button
-      width: 130px
-      height: 50px
-      padding: 5px 10px
+      @media only screen and (min-width: 300px)
+        font-size: 12px
+        width: 90px
+        height: 40px
+        padding: 5px 5px
+      @media only screen and (min-width: 600px)
+        font-size: 14px
+        width: 110px
+        height: 45px
+        padding: 5px 5px
+      @media only screen and (min-width: 1200px)
+        font-size: 16px
+        width: 130px
+        height: 50px
+        padding: 5px 10px
       border: 2px solid $yellow
       border-radius: 5px
       display: flex

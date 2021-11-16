@@ -42,7 +42,29 @@ const portifolio_v3 = {
   },
 }
 
-const projects = [portifolio_v1, portifolio_v2, portifolio_v3]
+const portifolio_v4 = {
+  name: "Meu Site 3.0",
+  tech: "HTML5 • CSS3 • Javascript",
+  links: {
+    git: "https://github.com/jp98smartins",
+    site: "https://joaopedromartins.com.br",
+    appStore: null,
+    playStore: null,
+  },
+}
+
+const portifolio_v5 = {
+  name: "Meu Site 3.0",
+  tech: "HTML5 • CSS3 • Javascript",
+  links: {
+    git: "https://github.com/jp98smartins",
+    site: "https://joaopedromartins.com.br",
+    appStore: null,
+    playStore: null,
+  },
+}
+
+const projects = [portifolio_v1, portifolio_v2, portifolio_v3, portifolio_v4, portifolio_v5]
 
 class Archive extends Component {
   render() {
