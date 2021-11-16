@@ -1,8 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faGooglePlay, faAppStore } from "@fortawesome/free-brands-svg-icons"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
-import project_image from "../assets/images/project_image.png"
 
 export const FeaturedProjectsLeft = props => {
   return (
@@ -19,10 +18,9 @@ export const FeaturedProjectsLeft = props => {
           <p>{props.description}</p>
         </div>
       </div>
-      s
       <div className="ft-proj-img">
         <a
-          href={props.site === "" ? props.git : props.site}
+          href={props.main_link === "" ? props.git : props.main_link}
           rel="noreferrer"
           target="_blank"
         >
@@ -46,11 +44,11 @@ export const FeaturedProjectsLeft = props => {
               </a>
             </div>
           )}
-          {props.site === "" ? (
+          {props.main_link === "" ? (
             <span></span>
           ) : (
             <div className="ft-proj-site">
-              <a href={props.site} rel="noreferrer" target="_blank">
+              <a href={props.main_link} rel="noreferrer" target="_blank">
                 <FontAwesomeIcon
                   icon={faExternalLinkAlt}
                   className="link-icon"
@@ -80,7 +78,7 @@ export const FeaturedProjectsRight = props => {
             </a>
           </div>
           <div className="ft-proj-site">
-            <a href={props.site} rel="noreferrer" target="_blank">
+            <a href={props.main_link} rel="noreferrer" target="_blank">
               <FontAwesomeIcon icon={faExternalLinkAlt} className="link-icon" />
             </a>
           </div>
@@ -88,7 +86,7 @@ export const FeaturedProjectsRight = props => {
       </div>
       <div className="ft-proj-img">
         <div className="ft-proj-image-overlay"></div>
-        <img src={project_image} alt="Imagem Projeto 01" />
+        <img src={props.image} alt="Imagem Projeto 01" />
       </div>
       <div className="ft-proj-desc">
         <div className="ft-proj-featured">

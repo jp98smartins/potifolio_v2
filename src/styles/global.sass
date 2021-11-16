@@ -290,7 +290,7 @@ header
   100%
     transform: translateX(5px)
 
-@media only screen and (min-width: 1200px)
+@media only screen and (max-width: 992px)
   .social-media
     display: none
 
@@ -1860,8 +1860,128 @@ header
               margin-right: 2%
 
 /* Featured Projects */
+@media only screen and (min-width: 992px)
+  .ft-proj-data-mobile
+    display: none
 
-@media only screen and (min-width: 300px)
+@media only screen and (max-width: 992px)
+  .ft-proj-data-mobile
+    display: block
+    border: 2px solid $white
+    border-radius: 5px
+    padding: 1%
+    width: 80%
+    margin: 5% auto
+    .ft-proj-img
+      height: 30vh
+      width: 100%
+      margin-bottom: 10px
+      cursor: pointer
+      background-color: $yellow-10
+      position: relative
+      z-index: 0
+      .ft-proj-image-overlay
+        width: 100%
+        height: 100%
+        background-color: $yellow-10
+        position: absolute
+        z-index: 2
+        &:hover
+          background-color: transparent
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        position: absolute
+        z-index: 1
+    .ft-proj-desc
+      height: 20vh !important
+      width: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: flex-start
+      div
+        width: 100%
+        display: flex
+        .ft-proj-featured
+          font-size: 12px
+          font-family: $secondary-font
+          color: $yellow
+          display: flex
+          justify-content: flex-start
+          align-items: center
+          span
+            margin-right: 10px
+        .ft-proj-title
+          width: 150%
+          margin-left: 5%
+          font-size: 24px
+          color: $white
+      .ft-proj-description
+        @media only screen and (min-width: 1200px)
+          height: 20vh
+        @media only screen and (min-width: 1600px)
+          height: 16vh
+        background-color: $light-dark
+        border-radius: 5px
+        width: 100%
+        overflow-x: hidden
+        overflow-y: auto
+        p
+          margin: 20px
+          font-size: 16px
+          color: $white-60
+    .ft-proj-tech
+      @media only screen and (min-width: 300px)
+        height: 10vh
+      @media only screen and (min-width: 400px)
+        height: 5vh
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: stretch
+      .ft-proj-used-tech
+        display: flex
+        @media only screen and (min-width: 300px)
+          width: 60%
+          flex-direction: column
+          margin: 0px
+          height: 10vh
+        @media only screen and (min-width: 400px)
+          width: 80%
+          margin: 10px
+          height: 5vh
+        @media only screen and (min-width: 768px)
+          width: 70%
+          margin: 10px
+        height: 100%
+        justify-content: space-around
+        align-items: center
+        p
+          font-family: $secondary-font
+          font-size: 14px
+          color: $white-50
+      .ft-proj-links
+        width: 20%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        div
+          width: 50%
+          height: 100%
+          margin: 5px
+          display: flex
+          justify-content: center
+          align-items: center
+          .link-icon, .git-icon
+            font-size: 25px
+            color: $white-50
+            &:hover
+              color: $yellow
+
+
+@media only screen and (max-width: 992px)
   .ft-proj-data-left
     display: none
 
@@ -1904,7 +2024,7 @@ header
           color: $white-60
     .ft-proj-img
       height: 100%
-      width: 60%
+      width: 50%
       margin: 0 2%
       cursor: pointer
       background-color: $yellow-10
@@ -1957,7 +2077,7 @@ header
             &:hover
               color: $yellow
 
-@media only screen and (min-width: 300px)
+@media only screen and (max-width: 992px)
   .ft-proj-data-right
     display: none
 

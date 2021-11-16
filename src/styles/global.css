@@ -476,7 +476,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 992px) {
   .social-media {
     display: none;
   }
@@ -3103,7 +3103,228 @@ header {
 }
 
 /* Featured Projects */
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 992px) {
+  .ft-proj-data-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .ft-proj-data-mobile {
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 1%;
+    width: 80%;
+    margin: 5% auto;
+  }
+  .ft-proj-data-mobile .ft-proj-img {
+    height: 30vh;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 206, 0, 0.1);
+    position: relative;
+    z-index: 0;
+  }
+  .ft-proj-data-mobile .ft-proj-img .ft-proj-image-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 206, 0, 0.1);
+    position: absolute;
+    z-index: 2;
+  }
+  .ft-proj-data-mobile .ft-proj-img .ft-proj-image-overlay:hover {
+    background-color: transparent;
+  }
+  .ft-proj-data-mobile .ft-proj-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    z-index: 1;
+  }
+  .ft-proj-data-mobile .ft-proj-desc {
+    height: 20vh !important;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .ft-proj-data-mobile .ft-proj-desc div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ft-proj-data-mobile .ft-proj-desc div .ft-proj-featured {
+    font-size: 12px;
+    font-family: "Roboto Mono";
+    color: #ffce00;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-proj-data-mobile .ft-proj-desc div .ft-proj-featured span {
+    margin-right: 10px;
+  }
+  .ft-proj-data-mobile .ft-proj-desc div .ft-proj-title {
+    width: 150%;
+    margin-left: 5%;
+    font-size: 24px;
+    color: #fff;
+  }
+  .ft-proj-data-mobile .ft-proj-desc .ft-proj-description {
+    background-color: #2A3B44;
+    border-radius: 5px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 1200px) {
+  .ft-proj-data-mobile .ft-proj-desc .ft-proj-description {
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 1600px) {
+  .ft-proj-data-mobile .ft-proj-desc .ft-proj-description {
+    height: 16vh;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .ft-proj-data-mobile .ft-proj-desc .ft-proj-description p {
+    margin: 20px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .ft-proj-data-mobile .ft-proj-tech {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 300px) {
+  .ft-proj-data-mobile .ft-proj-tech {
+    height: 10vh;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 400px) {
+  .ft-proj-data-mobile .ft-proj-tech {
+    height: 5vh;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .ft-proj-data-mobile .ft-proj-tech .ft-proj-used-tech {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 300px) {
+  .ft-proj-data-mobile .ft-proj-tech .ft-proj-used-tech {
+    width: 60%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px;
+    height: 10vh;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 400px) {
+  .ft-proj-data-mobile .ft-proj-tech .ft-proj-used-tech {
+    width: 80%;
+    margin: 10px;
+    height: 5vh;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .ft-proj-data-mobile .ft-proj-tech .ft-proj-used-tech {
+    width: 70%;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .ft-proj-data-mobile .ft-proj-tech .ft-proj-used-tech p {
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ft-proj-data-mobile .ft-proj-tech .ft-proj-links {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-proj-data-mobile .ft-proj-tech .ft-proj-links div {
+    width: 50%;
+    height: 100%;
+    margin: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ft-proj-data-mobile .ft-proj-tech .ft-proj-links div .link-icon, .ft-proj-data-mobile .ft-proj-tech .ft-proj-links div .git-icon {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .ft-proj-data-mobile .ft-proj-tech .ft-proj-links div .link-icon:hover, .ft-proj-data-mobile .ft-proj-tech .ft-proj-links div .git-icon:hover {
+    color: #ffce00;
+  }
+}
+
+@media only screen and (max-width: 992px) {
   .ft-proj-data-left {
     display: none;
   }
@@ -3179,7 +3400,7 @@ header {
   }
   .ft-proj-data-left .ft-proj-img {
     height: 100%;
-    width: 60%;
+    width: 50%;
     margin: 0 2%;
     cursor: pointer;
     background-color: rgba(255, 206, 0, 0.1);
@@ -3266,7 +3487,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (max-width: 992px) {
   .ft-proj-data-right {
     display: none;
   }
